@@ -1,0 +1,43 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Projekt.aux
+A level-1 auxiliary file: Chapters/Indledning/Indledning.aux
+A level-1 auxiliary file: Chapters/Krav/Krav.aux
+A level-1 auxiliary file: Chapters/Teori/Teori.aux
+A level-1 auxiliary file: Chapters/Struktur/Struktur.aux
+A level-1 auxiliary file: Chapters/Matlab/Matlab.aux
+A level-1 auxiliary file: Chapters/Test/Test.aux
+A level-1 auxiliary file: Chapters/Diskussion/Diskussion.aux
+A level-1 auxiliary file: Chapters/Konklussion/Konklussion.aux
+The style file: plain.bst
+Database file #1: Bibliography.bib
+You're missing a field name---line 8 of file Bibliography.bib
+ :  
+ :  %note       = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 15 of file Bibliography.bib
+ :  
+ :  %note = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 23 of file Bibliography.bib
+ :  
+ :  %note       = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 38 of file Bibliography.bib
+ :  
+ :  %note = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 76 of file Bibliography.bib
+ :  
+ :  %note = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 107 of file Bibliography.bib
+ :  howpublished = {Sparkfun}
+ :                           \\
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Teori"
+Warning--I didn't find a database entry for "Struktur"
+(There were 6 error messages)
