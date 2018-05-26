@@ -73,3 +73,12 @@ ISR(TIMER4_CAPT_vect)
 
 Det kan også ses i koden, hvordan overflow værdien lægges til newValue, hvis newValue er mindre end oldValue. FREQFLAG bruges så man altid er sikker på at freq har en ny værdi. FREQFLAG skal selvfølgelig sættes til 0, når man har brugt freq.
 
+\subsection{TC3200 kontrolsoftware}
+For nemt at kunne forstå softwaren brugt til til TC3200 er der blevet udarbejdet et data flow diagram, der giver et overblik over dataflowet i softwaren. Dette diagram kan ses på \autoref{fig:DataFlow}. Som det ses i diagrammet, bliver der taget en frekvensmåling for hver farve. Dette gøres, som beskrevet tidligere, ved at sætte S2 og S3 enten høj eller lav. Når en måling er taget, sammenlignes de tre målinger for at se hvilken farve er mest repræsenteret. Derefter sendes en char som enten er 'R', 'G' eller 'B'. Kommunikationen sker via I2C. Derefter starter koden forfra igen, og tager en ny frekvensmåling.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 500pt]{Img/DataFlowDiagram.pdf}
+	\caption{Data flow diagram}
+	\label{fig:DataFlow}
+\end{figure}
