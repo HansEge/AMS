@@ -8,7 +8,9 @@
 \contentsline {section}{\numberline {3}Color Sensor Module}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}LC Technology TCS3200}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Input Capture}{7}{subsection.3.2}
-\contentsline {section}{\numberline {4}Struktur}{9}{section.4}
-\contentsline {section}{\numberline {5}Test}{10}{section.5}
-\contentsline {section}{\numberline {6}Diskussion}{11}{section.6}
-\contentsline {section}{\numberline {7}Konklussion}{12}{section.7}
+\contentsline {section}{\numberline {4}TFT Display Module}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Hardware}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Software}{9}{subsection.4.2}
+\contentsline {section}{\numberline {5}Test}{12}{section.5}
+\contentsline {section}{\numberline {6}Diskussion}{13}{section.6}
+\contentsline {section}{\numberline {7}Konklussion}{14}{section.7}

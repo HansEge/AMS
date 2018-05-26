@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.26)  26 MAY 2018 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.26)  26 MAY 2018 12:45
 entering extended mode
 **./AMS_Projekt.tex
 (AMS_Projekt.tex
 LaTeX2e <2017-04-15>
-Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -20,49 +20,45 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
+) ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
 y"
-Package: babel 2018/01/24 3.17 The Babel package
+Package: babel 2018/02/14 3.18 The Babel package
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
 "
-File: switch.def 2018/01/24 3.17 Babel switching mechanism
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-danish\danis
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-danish\danis
 h.ldf"
 Language: danish 2009/09/19 v1.3r Danish support from the babel system
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2018/01/24 3.17 Babel common definitions
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
-"
-File: switch.def 2018/01/24 3.17 Babel switching mechanism
-)
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
 ef")
 \bbl@dirlevel=\count88
 )
 Package babel Info: Making " an active character on input line 82.
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtool
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtool
 s.sty"
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
 y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+) ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count89
 \calc@Bcount=\count90
@@ -75,33 +71,33 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count91
 \calc@Cskip=\skip45
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.
 sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
 y"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
 y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
 "
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen106
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
 "
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen107
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 "
 Package: amsopn 2016/03/08 v2.02 operator names
 )
@@ -157,17 +153,17 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen120
 \l_MT_below_shortintertext_sep=\dimen121
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textgreek\textgree
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textgreek\textgree
 k.sty"
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on 
 input line 39.
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\greek-fontenc\lgre
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\greek-fontenc\lgre
 nc.def"
 File: lgrenc.def 2015/12/07 v0.13.1 LGR Greek font encoding definitions
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\greek-fontenc\gree
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\greek-fontenc\gree
 k-fontenc.def"
 File: greek-fontenc.def 2015/08/04 v0.13 Common Greek font encoding definitions
 
@@ -179,16 +175,16 @@ Package textgreek Info: Loaded fontmap: {phv/*/*}{U/psy/*/*} {*/bx/n}{U/eur/b/n
 Package: mcode 2015/11/11 2.7
  - settings optimized for display (colour formating)
  - line numbering enabled
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
 .cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
 x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
@@ -202,7 +198,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
 sty"
 \lst@mode=\count105
 \lst@gtempboxa=\box28
@@ -217,20 +213,20 @@ sty"
 \lst@lineno=\count110
 \lst@maxwidth=\dimen125
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count111
 \lst@skipnumbers=\count112
 \lst@framebox=\box29
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
 cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -244,7 +240,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -310,17 +306,17 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-)) ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.s
+)) ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.s
 ty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks21
 \inpenc@posthook=\toks22
- ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
+ ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)) ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
+)) ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-global.def
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-global.def
 "
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
@@ -329,18 +325,18 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@combtoksb=\toks24
 \uc@temptokena=\toks25
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
 sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
 ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
@@ -349,21 +345,21 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\todonotes\todonote
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\todonotes\todonote
 s.sty"
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
 y"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
 tex"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
 .tex"
 \XKV@toks=\toks26
 \XKV@tempa@toks=\toks27
@@ -371,47 +367,47 @@ tex"
 \XKV@depth=\count114
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
 tikz.sty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
 .sty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfr
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfr
 cs.sty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 futil-common.tex"
 \pgfutil@everybye=\toks28
 \pgfutil@tempdima=\dimen128
 \pgfutil@tempdimb=\dimen129
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 futil-common-lists.tex"))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 futil-latex.def"
 \pgfutil@abb=\box30
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 frcs.code.tex"
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
 core.sty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pg
 fsys.sty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsys.code.tex"
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 fkeys.code.tex"
 \pgfkeys@pathtoks=\toks29
 \pgfkeys@temptoks=\toks30
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 fkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks31
 ))
@@ -433,41 +429,41 @@ fkeysfiltered.code.tex"
 \t@pgf@tokb=\toks33
 \t@pgf@tokc=\toks34
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count119
 \pgfsyssoftpath@bigbuffer@items=\count120
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcore.code.tex"
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 .code.tex"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 calc.code.tex"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 util.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 parser.code.tex"
 \pgfmath@dimen=\dimen138
 \pgfmath@count=\count121
@@ -476,29 +472,29 @@ parser.code.tex"
 \pgfmath@stack@operand=\toks36
 \pgfmath@stack@operation=\toks37
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.code.tex"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.basic.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.trigonometric.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.random.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.comparison.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.base.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.round.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.misc.code.tex")
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.integerarithmetics.code.tex")))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 float.code.tex"
 \c@pgfmathroundto@lastzeros=\count122
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen139
@@ -516,19 +512,19 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen151
 \pgf@zy=\dimen152
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen153
 \pgf@path@lasty=\dimen154
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen155
 \pgf@shorten@start@additional=\dimen156
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box32
@@ -536,107 +532,107 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgf@layerbox@main=\box34
 \pgf@picture@serial@count=\count123
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen157
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen158
 \pgf@pt@y=\dimen159
 \pgf@pt@temp=\dimen160
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen161
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen162
 \pgf@sys@shading@range@num=\count124
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box35
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 oduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box36
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 oduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
 pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen163
 \pgf@nodesepend=\dimen164
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
 pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgff
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgff
 or.sty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfk
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfk
 eys.sty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 fkeys.code.tex"))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.s
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.s
 ty"
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 .code.tex"))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 ffor.code.tex"
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 .code.tex")
 \pgffor@iter=\dimen165
 \pgffor@skip=\dimen166
 \pgffor@stack=\toks38
 \pgffor@toks=\toks39
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
 flibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count125
@@ -657,7 +653,7 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count128
 \tikz@fig@count=\count129
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 odulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count130
@@ -666,28 +662,28 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count133
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
 \c@@todonotes@numberoftodonotes=\count134
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix.
 sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count135
 \c@@ppsavesec=\count136
 \c@@ppsaveapp=\count137
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\floatrow\floatrow.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\floatrow\floatrow.
 sty"
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
 ty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
@@ -735,16 +731,16 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip63
 \flrow@types=\toks42
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
 sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
 hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
 generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
@@ -785,15 +781,15 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
 ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
 .sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
@@ -801,13 +797,13 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@linkcounter=\count145
 \Hy@pagecounter=\count146
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count147
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -819,7 +815,7 @@ Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count148
- ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+ ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -843,13 +839,13 @@ LaTeX Info: Redefining \pageref on input line 6443.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
 ef"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count153
 \c@bookmark@seq@number=\count154
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -857,33 +853,33 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hypcap.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hypcap.st
 y"
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
-) ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.sty"
+) ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.sty"
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
-) ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.st
+) ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.st
 y"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count155
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.
 sty"
 Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.st
 y"
-Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 )
 \AM@pagewidth=\dimen189
 \AM@pageheight=\dimen190
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.
 def"
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
@@ -893,7 +889,7 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count156
 \AM@templatesizebox=\box45
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count157
@@ -909,22 +905,22 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen198
 \Gm@dimlist=\toks45
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\listingsu
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\listingsu
 tf8.sty"
 Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\stringe
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\stringe
 nc.sty"
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 ))
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtex
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtex
 t.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count160
@@ -946,7 +942,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count176
 \c@blind@pangrammax=\count177
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
 sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip65
@@ -978,21 +974,21 @@ LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 35.
 LaTeX Font Info:    Try loading font information for LGR+cmr on input line 35.
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cbfonts-fd\lgrcmr.
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cbfonts-fd\lgrcmr.
 fd"
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
- ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count179
@@ -1007,11 +1003,11 @@ ii"
 \makeMPintoPDFobject=\count184
 \everyMPtoPDFconversion=\toks48
 )
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
 y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
@@ -1024,7 +1020,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count185
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 LGR\textpentedeka already defined.
 LGR\textpenteqilioi already defined.
@@ -1109,11 +1105,11 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box48
 Package hyperref Info: Link coloring ON on input line 35.
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
@@ -1127,11 +1123,11 @@ LaTeX Info: Redefining \nameref on input line 35.
 \openout4 = `AMS_Projekt.out'.
 
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscape
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscape
 .sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.st
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.st
 y"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
@@ -1171,10 +1167,10 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<Img/logo.jpg, id=58, 454.69875pt x 116.68594pt>
+<Img/logo.jpg, id=66, 454.69875pt x 116.68594pt>
 File: Img/logo.jpg Graphic file (type jpg)
 <use Img/logo.jpg>
 Package pdftex.def Info: Img/logo.jpg  used on input line 84.
@@ -1190,7 +1186,7 @@ Package babel Info: Redefining danish shorthand "~
 
 [1
 
-{C:/Users/stinu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Img/logo.
+{C:/Users/Liver/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Img/logo.
 jpg>] (AMS_Projekt.toc)
 \tf@toc=\write5
 \openout5 = `AMS_Projekt.toc'.
@@ -1228,7 +1224,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
-<Chapters/Indledning/Img/KonceptBillede.png, id=102, 433.62pt x 453.19313pt>
+<Chapters/Indledning/Img/KonceptBillede.png, id=120, 433.62pt x 453.19313pt>
 File: Chapters/Indledning/Img/KonceptBillede.png Graphic file (type png)
 <use Chapters/Indledning/Img/KonceptBillede.png>
 Package pdftex.def Info: Chapters/Indledning/Img/KonceptBillede.png  used on in
@@ -1253,7 +1249,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
-<Chapters/Krav/Img/Usecase_diagram.png, id=107, 521.95pt x 361.35pt>
+<Chapters/Krav/Img/Usecase_diagram.png, id=125, 521.95pt x 361.35pt>
 File: Chapters/Krav/Img/Usecase_diagram.png Graphic file (type png)
 <use Chapters/Krav/Img/Usecase_diagram.png>
 Package pdftex.def Info: Chapters/Krav/Img/Usecase_diagram.png  used on input l
@@ -1310,13 +1306,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 9.
-<Chapters/Teori/Img/S1S2_color.png, id=119, 483.30562pt x 211.54031pt>
+<Chapters/Teori/Img/S1S2_color.png, id=137, 483.30562pt x 211.54031pt>
 File: Chapters/Teori/Img/S1S2_color.png Graphic file (type png)
 <use Chapters/Teori/Img/S1S2_color.png>
 Package pdftex.def Info: Chapters/Teori/Img/S1S2_color.png  used on input line 
 14.
 (pdftex.def)             Requested size: 200.0pt x 87.53903pt.
-<Chapters/Teori/Img/FarveSpektrum.png, id=122, 1153.30875pt x 297.36093pt>
+<Chapters/Teori/Img/FarveSpektrum.png, id=140, 1153.30875pt x 297.36093pt>
 File: Chapters/Teori/Img/FarveSpektrum.png Graphic file (type png)
 <use Chapters/Teori/Img/FarveSpektrum.png>
 Package pdftex.def Info: Chapters/Teori/Img/FarveSpektrum.png  used on input li
@@ -1340,7 +1336,7 @@ Package babel Info: Redefining danish shorthand "~
 
  <./Chapters/Teori/Img/S1S2_color.png> <./Chapters/Teori/Img/FarveSpektrum.png>
 ]
-<Chapters/Teori/Img/Frekvens.png, id=131, 502.12593pt x 161.10187pt>
+<Chapters/Teori/Img/Frekvens.png, id=149, 502.12593pt x 161.10187pt>
 File: Chapters/Teori/Img/Frekvens.png Graphic file (type png)
 <use Chapters/Teori/Img/Frekvens.png>
 Package pdftex.def Info: Chapters/Teori/Img/Frekvens.png  used on input line 32
@@ -1350,7 +1346,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 37.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 37.
-<Chapters/Teori/Img/InputCapture.png, id=132, 755.82375pt x 213.04594pt>
+<Chapters/Teori/Img/InputCapture.png, id=150, 755.82375pt x 213.04594pt>
 File: Chapters/Teori/Img/InputCapture.png Graphic file (type png)
 <use Chapters/Teori/Img/InputCapture.png>
 Package pdftex.def Info: Chapters/Teori/Img/InputCapture.png  used on input lin
@@ -1371,17 +1367,17 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 52.
 [7 <./Chapters/Teori/Img/Frekvens.png> <./Chapters/Teori/Img/InputCapture.png>]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 53.
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Try loading font information for OMS+pcr on input line 55.
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
 LaTeX Font Info:    Try loading font information for OML+pcr on input line 59.
-("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlpcr.fd"
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlpcr.fd"
 File: omlpcr.fd 
 )
 LaTeX Font Info:    Font shape `OML/pcr/m/n' in size <10> not available
@@ -1403,6 +1399,67 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 8.
+
+("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 11.
+<Chapters/Struktur/Img/MCU-Interface_Mode.png, id=182, 714.41907pt x 228.855pt>
+
+File: Chapters/Struktur/Img/MCU-Interface_Mode.png Graphic file (type png)
+<use Chapters/Struktur/Img/MCU-Interface_Mode.png>
+Package pdftex.def Info: Chapters/Struktur/Img/MCU-Interface_Mode.png  used on 
+input line 17.
+(pdftex.def)             Requested size: 400.0pt x 128.13347pt.
+<Chapters/Struktur/Img/WriteCommand_Code.png, id=184, 388.45125pt x 223.58531pt
+>
+File: Chapters/Struktur/Img/WriteCommand_Code.png Graphic file (type png)
+<use Chapters/Struktur/Img/WriteCommand_Code.png>
+Package pdftex.def Info: Chapters/Struktur/Img/WriteCommand_Code.png  used on i
+nput line 27.
+(pdftex.def)             Requested size: 300.0pt x 172.67976pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 30.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 30.
+
+[9
+
+
+ <./Chapters/Struktur/Img/MCU-Interface_Mode.png>]
+<Chapters/Struktur/Img/Timedelays.png, id=191, 641.39626pt x 362.10281pt>
+File: Chapters/Struktur/Img/Timedelays.png Graphic file (type png)
+<use Chapters/Struktur/Img/Timedelays.png>
+Package pdftex.def Info: Chapters/Struktur/Img/Timedelays.png  used on input li
+ne 37.
+(pdftex.def)             Requested size: 450.0pt x 254.05591pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 44.
+ [10 <./Chapters/Struktur/Img/WriteCommand_Code.png> <./Chapters/Struktur/Img/T
+imedelays.png>]
+<Chapters/Struktur/Img/WriteData_Code.png, id=197, 404.26031pt x 252.945pt>
+File: Chapters/Struktur/Img/WriteData_Code.png Graphic file (type png)
+<use Chapters/Struktur/Img/WriteData_Code.png>
+Package pdftex.def Info: Chapters/Struktur/Img/WriteData_Code.png  used on inpu
+t line 47.
+(pdftex.def)             Requested size: 450.0pt x 281.56735pt.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 110.
@@ -1412,10 +1469,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 110.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 110.
- [9
-
-
-]
+ [11 <./Chapters/Struktur/Img/WriteData_Code.png>]
 \openout2 = `Chapters/Matlab/Matlab.aux'.
 
  (Chapters/Matlab/Matlab.tex)
@@ -1436,7 +1490,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 112.
- [10
+ [12
 
 
 
@@ -1458,7 +1512,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 113.
- [11
+ [13
 
 
 ]
@@ -1479,7 +1533,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 114.
- [12
+ [14
 
 
 ] (AMS_Projekt.bbl
@@ -1498,7 +1552,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 130.
-[13
+[15
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
@@ -1511,32 +1565,32 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `AMS_Projekt.out' has not changed.
-(rerunfilecheck)             Checksum: F6D7E7C1BC6BA1FA37EB3D8B35C12C8E;716.
+(rerunfilecheck)             Checksum: 34B28FC0EC8C4017CC15858FE1D5585A;844.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 24269 strings out of 493303
- 441816 string characters out of 3129784
- 619670 words of memory out of 3000000
- 27245 multiletter control sequences out of 15000+200000
+ 24552 strings out of 493305
+ 445755 string characters out of 3129802
+ 619883 words of memory out of 3000000
+ 27512 multiletter control sequences out of 15000+200000
  14255 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,92p,975b,1340s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-} <C:\Users\stinu\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
-crm1200.pk><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/stinu/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/stinu/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/stinu/
+ 62i,6n,92p,1078b,1340s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+} <C:\Users\Liver\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
+crm1200.pk><C:/Users/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Users/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Liver/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Liver/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Liver/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
-sers/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmti12.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+sers/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti12.pfb><C:/Users/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/urw/courier/ucrr8a.pfb>
-Output written on AMS_Projekt.pdf (14 pages, 282836 bytes).
+Output written on AMS_Projekt.pdf (16 pages, 556139 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
