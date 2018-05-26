@@ -44,7 +44,17 @@ Dernæst implementerede vi WriteData, som tilnærmelsesvis ligner WriteCommand b
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 450pt]{Img/WriteData_Code.png}
+	\includegraphics[width = 350pt]{Img/WriteData_Code.png}
 	\caption{WriteData kode}
 	\label{fig:WriteData_Code}
+\end{figure}
+
+
+I vores DisplayInit() som vi kalder en gang i koden til at Initialisere displayet, starter vi med at sætte vores Control Pins som output samt sætte dem høje. Dernæst bliver RST sat lav i 300ms, det skyldes at der i databladet på side 230 står minimum 120ms, så det er sat til 300ms for at være på den sikre side. Efter vi igen sætter RST igen bliver sat høj, skal vi igen vente 120ms før vi må kalde SleepOut Command, derfor indsætter et delay på 130ms. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 350pt]{Img/DisplayInit_Code.png}
+	\caption{DisplayInit kode}
+	\label{fig:DisplayInit_Code}
 \end{figure}
