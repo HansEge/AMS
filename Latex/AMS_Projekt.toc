@@ -5,13 +5,15 @@
 \contentsline {subsection}{\numberline {2.2}UC2 - Save Data}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}UC3 - Read Data}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Afgr\IeC {\ae }nsning}{5}{subsection.2.4}
-\contentsline {section}{\numberline {3}Color Sensor Module}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}LC Technology TCS3200}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Input Capture}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Color Sensor Module Software}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}TFT Display Module}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Hardware}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Software}{10}{subsection.4.2}
-\contentsline {section}{\numberline {5}I2C kommunikation}{13}{section.5}
-\contentsline {section}{\numberline {6}Diskussion}{14}{section.6}
+\contentsline {section}{\numberline {3}Diskussion}{6}{section.3}
+\contentsline {section}{\numberline {4}Color Sensor Module}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}LC Technology TCS3200}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Input Capture}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Color Sensor Module Software}{9}{subsection.4.3}
+\contentsline {section}{\numberline {5}TFT Display Module}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Hardware}{11}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Software}{11}{subsection.5.2}
+\contentsline {section}{\numberline {6}I2C kommunikation}{14}{section.6}
+\contentsline {subsection}{\numberline {6.1}I2C slave}{14}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}I2C master}{14}{subsection.6.2}
 \contentsline {section}{\numberline {7}Konklussion}{15}{section.7}
