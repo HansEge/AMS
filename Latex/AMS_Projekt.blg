@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Projekt.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: AMS_Projekt.aux
 A level-1 auxiliary file: Chapters/Indledning/Indledning.aux
 A level-1 auxiliary file: Chapters/Krav/Krav.aux
 A level-1 auxiliary file: Chapters/Teori/Teori.aux
@@ -8,6 +8,7 @@ A level-1 auxiliary file: Chapters/Test/Test.aux
 A level-1 auxiliary file: Chapters/Diskussion/Diskussion.aux
 A level-1 auxiliary file: Chapters/Konklussion/Konklussion.aux
 The style file: plain.bst
+I found no \citation commands---while reading file AMS_Projekt.aux
 Database file #1: Bibliography.bib
 You're missing a field name---line 8 of file Bibliography.bib
  :  
@@ -38,6 +39,4 @@ I was expecting a `,' or a `}'---line 107 of file Bibliography.bib
  :  howpublished = {Sparkfun}
  :                           \\
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Teori"
-Warning--I didn't find a database entry for "Struktur"
-(There were 6 error messages)
+(There were 7 error messages)

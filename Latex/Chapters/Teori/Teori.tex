@@ -3,4 +3,73 @@
 %-------------------------------------------------------------------------------
 
 
-\section{Teori}
+\section{Color Sensor Module}
+Color sensor modulet indeholder både en microcontroller og en color sensor. Til dette projekt har gruppen valgt at bruge en LC Technology TCS3200. Sensoren blev valgt fordi den var på lager i Embedded Stock, og at den ville passe godt til dette projekt. Til at styre denne sensor bruges en Arduino mega 2560.
+
+\subsection{LC Technology TCS3200}
+LC Technology TCS3200, virker ved at have 8x8 array af fotodioder. 16 fotodioder med et grønt filter, 16 fotodioder med et blåt filter, 16 fotodioder med et rødt filter og 16 fotodioder uden noget filter. De kan alle styres ved at sætte to pins(S2 og S3) høj eller lav. Se \autoref{fig:PinSelect}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 200pt]{Img/S1S2_color.png}
+	\caption{Styring af photodioder}
+	\label{fig:PinSelect}
+\end{figure}
+
+For at aflæse farveintensiteten, bliver man nødt til at måle på sensorens output pin. Signalet der kommer ud er et firkantssignal og farveintensiteten er bestemt alt efter hvor høj frekvensen er. For at se hvilken farve emnet har, bliver man nødt til at aktivere de forskellige fotodioder hver for sig, og tage en måling på output pin'en hver gang man har skiftet fotodiode. Derefter kan man så sammenligne de tre målinger (Clear bliver ikke målt) og se hvilket er størst. Hvis der skal måles andre farver end rød, grøn og blå, som fx gul, bliver man nødt til at kigge både på grøn og på rød. Hvis begge er lige høje må det være gul. Dog reagerer de forskellige fotodioder forskelligt på hvilken farve man ser på, så der skal der tages højde for. På \autoref{fig:FarveSpektrum} kan man se hvordan de forskellige fotodioder reagerer ved forskellige bølgelændger(farver).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 500pt]{Img/FarveSpektrum.png}
+	\caption{Output frekvens ved forskellige farver}
+	\label{fig:FarveSpektrum}
+\end{figure}
+
+En sidste ting der er værd er at vide om TCS3200, er dens indbygget frequency scaler. Den kan bruges til at styre skaleringen af output signalets frekvens. Skaleringen kan styres ved at sætte S1 og S2 høj eller lav. Til CSS bruges 2\% skalering, da 100\% skalering, ville betyde at output frekvensen kunne komme op over 50kHz. En lavere frekvens vil være fordelagtig i forhold til at få en præcis måling. Se \autoref{fig:Frekvens}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 300pt]{Img/Frekvens.png}
+	\caption{Output frekvens skalering}
+	\label{fig:Frekvens}
+\end{figure}
+
+\subsection{Input Capture}
+Input Capture er en metode der ofte bruges i embedded systemer, til at måle på diverse signaler. Til at måle outputsignalet fra TC3200 color sensor bruges denne metode.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 500pt]{Img/InputCapture.png}
+	\caption{Input Capture illustration}
+	\label{fig:InputCapture}
+\end{figure}
+
+
+Input Capture fungerer ved at have et interrupt der trigger på rising edge. Når dette interrupt bliver kaldt, tages et øjebliksbillede af TIMER4s værdi, som gemmes i Input Capture Register 4. Denne værdi gemmes i en variabel, som bagefter bruges til at beregne en frekvens. 
+
+Derudover skal der også tages højde for overflow, ellers kan man risikerer at en måling ikke vil give en korrekt frekvens. For at udbedre dette problem bruges en anden interrupt, ISR(TIMER4\_OVF\_vect). Den trigger hver gang der kommer overflow, og 65535 lægges til newValue. Koden til hvordan frekvensen udregnes kan ses nedenunder.
+
+\newpage
+\begin{lstlisting}
+ISR(TIMER4_CAPT_vect)
+{
+	oldValue = newValue;
+	newValue = ICR4;
+	
+	if(newValue < oldValue)
+	{
+		period = oldValue-newValue;
+	}
+	else
+	{
+		newValue + overflow;
+		period = oldValue - newValue;
+	}
+	freq = F_CPU/period;
+	FREQFLAG = 1;
+}
+
+\end{lstlisting}
+
+Det kan også ses i koden, hvordan overflow værdien lægges til newValue, hvis newValue er mindre end oldValue. FREQFLAG bruges så man altid er sikker på at freq har en ny værdi. FREQFLAG skal selvfølgelig sættes til 0, når man har brugt freq.
+

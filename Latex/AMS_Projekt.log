@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.26)  23 MAY 2018 09:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.26)  26 MAY 2018 11:18
 entering extended mode
-**./Projekt.tex
-(Projekt.tex
+**./AMS_Projekt.tex
+(AMS_Projekt.tex
 LaTeX2e <2017-04-15>
 Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -956,11 +956,12 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitdp@description=\count178
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 30.
- (Projekt.aux (Chapters/Indledning/Indledning.aux) (Chapters/Krav/Krav.aux) (Ch
-apters/Teori/Teori.aux) (Chapters/Struktur/Struktur.aux)
-(Chapters/Matlab/Matlab.aux) (Chapters/Test/Test.aux)
-(Chapters/Diskussion/Diskussion.aux) (Chapters/Konklussion/Konklussion.aux))
-\openout1 = `Projekt.aux'.
+ (AMS_Projekt.aux (Chapters/Indledning/Indledning.aux)
+(Chapters/Krav/Krav.aux) (Chapters/Teori/Teori.aux)
+(Chapters/Struktur/Struktur.aux) (Chapters/Matlab/Matlab.aux)
+(Chapters/Test/Test.aux) (Chapters/Diskussion/Diskussion.aux)
+(Chapters/Konklussion/Konklussion.aux))
+\openout1 = `AMS_Projekt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
@@ -1121,9 +1122,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 35.
 LaTeX Info: Redefining \pageref on input line 35.
 LaTeX Info: Redefining \nameref on input line 35.
- (Projekt.out) (Projekt.out)
+ (AMS_Projekt.out) (AMS_Projekt.out)
 \@outlinefile=\write4
-\openout4 = `Projekt.out'.
+\openout4 = `AMS_Projekt.out'.
 
 
 ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscape
@@ -1173,7 +1174,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<Img/logo.jpg, id=34, 454.69875pt x 116.68594pt>
+<Img/logo.jpg, id=58, 454.69875pt x 116.68594pt>
 File: Img/logo.jpg Graphic file (type jpg)
 <use Img/logo.jpg>
 Package pdftex.def Info: Img/logo.jpg  used on input line 84.
@@ -1190,9 +1191,9 @@ Package babel Info: Redefining danish shorthand "~
 [1
 
 {C:/Users/stinu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Img/logo.
-jpg>] (Projekt.toc)
+jpg>] (AMS_Projekt.toc)
 \tf@toc=\write5
-\openout5 = `Projekt.toc'.
+\openout5 = `AMS_Projekt.toc'.
 
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 99.
@@ -1207,9 +1208,9 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.99 \newpage
-              [1] (Projekt.lof)
+              [1] (AMS_Projekt.lof)
 \tf@lof=\write6
-\openout6 = `Projekt.lof'.
+\openout6 = `AMS_Projekt.lof'.
 
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 101.
@@ -1227,18 +1228,24 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
+<Chapters/Indledning/Img/KonceptBillede.png, id=102, 433.62pt x 453.19313pt>
+File: Chapters/Indledning/Img/KonceptBillede.png Graphic file (type png)
+<use Chapters/Indledning/Img/KonceptBillede.png>
+Package pdftex.def Info: Chapters/Indledning/Img/KonceptBillede.png  used on in
+put line 10.
+(pdftex.def)             Requested size: 400.0pt x 418.07681pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 18.
 
 [3
 
-])
+ <./Chapters/Indledning/Img/KonceptBillede.png>])
 \openout2 = `Chapters/Krav/Krav.aux'.
 
  (Chapters/Krav/Krav.tex
@@ -1246,6 +1253,41 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
+<Chapters/Krav/Img/Usecase_diagram.png, id=107, 521.95pt x 361.35pt>
+File: Chapters/Krav/Img/Usecase_diagram.png Graphic file (type png)
+<use Chapters/Krav/Img/Usecase_diagram.png>
+Package pdftex.def Info: Chapters/Krav/Img/Usecase_diagram.png  used on input l
+ine 28.
+(pdftex.def)             Requested size: 400.0pt x 276.92809pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 35.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 37.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 37.
+
+[4
+
+
+ <./Chapters/Krav/Img/Usecase_diagram.png (PNG copy)>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 41.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 44.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 108.
@@ -1255,17 +1297,95 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 108.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 108.
- [4
-
-
-]
+ [5]
 \openout2 = `Chapters/Teori/Teori.aux'.
 
- (Chapters/Teori/Teori.tex
+
+(Chapters/Teori/Teori.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 9.
+<Chapters/Teori/Img/S1S2_color.png, id=119, 483.30562pt x 211.54031pt>
+File: Chapters/Teori/Img/S1S2_color.png Graphic file (type png)
+<use Chapters/Teori/Img/S1S2_color.png>
+Package pdftex.def Info: Chapters/Teori/Img/S1S2_color.png  used on input line 
+14.
+(pdftex.def)             Requested size: 200.0pt x 87.53903pt.
+<Chapters/Teori/Img/FarveSpektrum.png, id=122, 1153.30875pt x 297.36093pt>
+File: Chapters/Teori/Img/FarveSpektrum.png Graphic file (type png)
+<use Chapters/Teori/Img/FarveSpektrum.png>
+Package pdftex.def Info: Chapters/Teori/Img/FarveSpektrum.png  used on input li
+ne 23.
+(pdftex.def)             Requested size: 500.0pt x 128.91536pt.
+
+Overfull \hbox (30.24498pt too wide) in paragraph at lines 23--24
+ [][] 
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 29.
+[6
+
+
+ <./Chapters/Teori/Img/S1S2_color.png> <./Chapters/Teori/Img/FarveSpektrum.png>
+]
+<Chapters/Teori/Img/Frekvens.png, id=131, 502.12593pt x 161.10187pt>
+File: Chapters/Teori/Img/Frekvens.png Graphic file (type png)
+<use Chapters/Teori/Img/Frekvens.png>
+Package pdftex.def Info: Chapters/Teori/Img/Frekvens.png  used on input line 32
+.
+(pdftex.def)             Requested size: 300.0pt x 96.25626pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 37.
+<Chapters/Teori/Img/InputCapture.png, id=132, 755.82375pt x 213.04594pt>
+File: Chapters/Teori/Img/InputCapture.png Graphic file (type png)
+<use Chapters/Teori/Img/InputCapture.png>
+Package pdftex.def Info: Chapters/Teori/Img/InputCapture.png  used on input lin
+e 42.
+(pdftex.def)             Requested size: 500.0pt x 140.93582pt.
+
+Overfull \hbox (30.24498pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 52.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 52.
+[7 <./Chapters/Teori/Img/Frekvens.png> <./Chapters/Teori/Img/InputCapture.png>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 53.
+("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 55.
+("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+LaTeX Font Info:    Try loading font information for OML+pcr on input line 59.
+("C:\Users\stinu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlpcr.fd"
+File: omlpcr.fd 
+)
+LaTeX Font Info:    Font shape `OML/pcr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 59.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 109.
@@ -1275,14 +1395,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 109.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 109.
- [5
-
-
-]
+ [8]
 \openout2 = `Chapters/Struktur/Struktur.aux'.
 
-
-(Chapters/Struktur/Struktur.tex
+ (Chapters/Struktur/Struktur.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
@@ -1296,7 +1412,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 110.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 110.
- [6
+ [9
 
 
 ]
@@ -1320,7 +1436,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 112.
- [7
+ [10
 
 
 
@@ -1342,7 +1458,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 113.
- [8
+ [11
 
 
 ]
@@ -1363,10 +1479,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 114.
- [9
+ [12
 
 
-] (Projekt.bbl
+] (AMS_Projekt.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
@@ -1382,37 +1498,45 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 130.
-[10
+[13
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
- (Projekt.aux (Chapters/Indledning/Indledning.aux) (Chapters/Krav/Krav.aux) (Ch
-apters/Teori/Teori.aux) (Chapters/Struktur/Struktur.aux)
-(Chapters/Matlab/Matlab.aux) (Chapters/Test/Test.aux)
-(Chapters/Diskussion/Diskussion.aux) (Chapters/Konklussion/Konklussion.aux))
+ (AMS_Projekt.aux (Chapters/Indledning/Indledning.aux)
+(Chapters/Krav/Krav.aux) (Chapters/Teori/Teori.aux)
+(Chapters/Struktur/Struktur.aux) (Chapters/Matlab/Matlab.aux)
+(Chapters/Test/Test.aux) (Chapters/Diskussion/Diskussion.aux)
+(Chapters/Konklussion/Konklussion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
-Package rerunfilecheck Info: File `Projekt.out' has not changed.
-(rerunfilecheck)             Checksum: DC1F03BA756E51FB8C26E28DA9EEFEB5;304.
+Package rerunfilecheck Info: File `AMS_Projekt.out' has not changed.
+(rerunfilecheck)             Checksum: F6D7E7C1BC6BA1FA37EB3D8B35C12C8E;716.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 23784 strings out of 493303
- 435909 string characters out of 3129784
- 612410 words of memory out of 3000000
- 26816 multiletter control sequences out of 15000+200000
- 12880 words of font info for 45 fonts, out of 3000000 for 9000
+ 24269 strings out of 493303
+ 441816 string characters out of 3129784
+ 619670 words of memory out of 3000000
+ 27245 multiletter control sequences out of 15000+200000
+ 14255 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,92p,465b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmcsc10.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/stinu/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Projekt.pdf (11 pages, 89854 bytes).
+ 62i,6n,92p,975b,1340s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+} <C:\Users\stinu\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
+crm1200.pk><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/stinu/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/stinu/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/stinu/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
+sers/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti12.pfb><C:/Users/stinu/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/urw/courier/ucrr8a.pfb>
+Output written on AMS_Projekt.pdf (14 pages, 282836 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 233 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

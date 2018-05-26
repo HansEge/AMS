@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Indledning}{}% 1
+\BOOKMARK [1][-]{section.2}{Krav}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{UC1 - Read Color}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{UC2 - Save Data}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{UC3 - Read Data}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Afgr\346nsning}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Color Sensor Module}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{LC Technology TCS3200}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Input Capture}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Struktur}{}% 10
+\BOOKMARK [1][-]{section.5}{Test}{}% 11
+\BOOKMARK [1][-]{section.6}{Diskussion}{}% 12
+\BOOKMARK [1][-]{section.7}{Konklussion}{}% 13
