@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {3}Color Sensor Module}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}LC Technology TCS3200}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Input Capture}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}TC3200 kontrolsoftware}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Color Sensor Module Software}{8}{subsection.3.3}
 \contentsline {section}{\numberline {4}Struktur}{10}{section.4}
 \contentsline {section}{\numberline {5}Test}{11}{section.5}
 \contentsline {section}{\numberline {6}Diskussion}{12}{section.6}
