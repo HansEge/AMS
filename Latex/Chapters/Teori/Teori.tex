@@ -82,3 +82,10 @@ For nemt at kunne forstå softwaren brugt til TC3200, er der blevet udarbejdet e
 	\caption{Data flow diagram}
 	\label{fig:DataFlow}
 \end{figure}
+
+
+\subsection{Test}
+En enhedstest er blevet lavet da modulet var færdigt. Resultatet af denne test vil bliver fremvist her. Først er input capture softwaren testet ved at bruge en funktions generator til at sende et firkantssignal ind på input capture pin'en. For at se om softwaren kunne aflæse den rigtige frekvens, er der gjort brug af UART kommunikation til en tilsluttet PC. Fra en terminal på PC'en har man kunne aflæse frekvensen fra arduino'en og derfra konstatere at programmet har virket.
+
+Til test af color sensoren, er der gjort brug af Input Capture programmet sammen med UART kommunikation til en PC. Sensorens output pin blev koblet til input capture pin'en, og tre målinger blev taget, én for hver farve(RGB). Farven med den højeste frekvens blev desuden sendt med som et bogstav, enten R B eller G. Som farvet forsøgsemne, blev tre forskelligt farvet stykker papir brugt. For at få så godt et resultat som muligt, skulle papiret holdes max 1cm fra sensoren, dog var det grønne papir stadig svært at opfange for sensoren. Dette skyldes højst sandsynligt at farven ikke var den samme som databladet brugte til at teste med($\lambda = 524 nm$). Udover den grønne farve ikke passede helt, kan sensoren stadig skelne imellem de tre forskllige farver.
+
