@@ -63,7 +63,6 @@ I vores DisplayInit() som vi kalder en gang i koden til at Initialisere displaye
 Efter at have initialiseret og opsat displayet efter egen ønske. Var den næste opgave at kunne skrive tal og bogstaver ud på vores display. Til dette benyttede vi os af et program ved navn ’TheDotFactory’. Vi fik programmet til at udskrive et kæmpe array, som indeholder alle symboler, tal samt bogstaver vi kunne havde brug for. Sammen med et tilhørende array, der fortæller længden af hvert symbol samt dens offset. Disse to arrays genereret af programmet ’TheDotFactory’ har vi lagt ind i en h-fil ved navn ”DotFactory.h”.
 På den efterfølgende \autoref{TFTDisplayFunktioner} vil funktionerne vi har benyttet blive overordnet blive beskrevet, i vores vedlagte kode vil en mere detaljeret gennemgang af koden kunne ses, i form af kommentar til hver linje kode i den vedlagte kode. 
 
-\newpage
 
 \begin{table}[]
 	\centering
@@ -84,3 +83,26 @@ På den efterfølgende \autoref{TFTDisplayFunktioner} vil funktionerne vi har be
 		drawTotal() &  \begin{tabular}[c]{@{}l@{}} Meningen med denne funktion er at den skal tage tre parametre som\\ antallet af hver farve detekteret. Disse tre parametre bliver så lagt\\ sammen i en totalCount variable, og udregnet hvor stor en procentdel\\ de hver udgør at det samlet antal optællinger. Den procentdel\\ udgør så hvor høj hver enkel søjle skal være. Så vil DrawRed(),\\ DrawGreen() og DrawBlue() blive kaldt hvor de tre parametre vil\\ være tallene over søjlerne, højden vil være den udregnede\\ procentdel og totalCount vil blive vist i øverste højre hjørne\\ ved hjælp af writeInt().  \end{tabular}                                                                                                                                                                                         \\ \hline
 	\end{tabular}
 \end{table}
+\newpage
+
+
+
+På \autoref{fig:Flowchart_TFTDisplay_SW} ses et lille flow chart over main koden til TFT Display Modul. Den får sit input igennem en I2C forbindelse, som vil blive mere uddybet i det efterfølgende afsnit. Det input bliver så undersøgt, og alt efter hvilket char 'R', 'G' eller 'B' der bliver modtaget optælles den tilhørende conut til den farve, hvorefter displayet bliver clearet og det nye resultat bliver vist. Så er modulet klar til et nyt input.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 300pt]{Img/Flowchart_TFTDisplay_SW.png}
+	\caption{Flowchart TFT Display software}
+	\label{fig:Flowchart_TFTDisplay_SW}
+\end{figure}
+
+
+\subsection{Test}
+Efter modulet stod færdig blev en enhedstest af modulet lavet resultatet af dette ses på \autoref{fig:TFT_Display_Module_test}. I testen blev countBlue og countGreen hver pludset op 1 og countRed blev pludset op med 2 en gang i sekundet. Som det kan ses passer vores procentvise fordeling af søjlerne. Blå og grøn søje har samme høje og den røde søjle er dobbelt så høj. Det er kun i enhedstesten af vi pludser count variablerne op en gang i sekundet. I det færdige system vil denne data komme fra I2C linjen. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 300pt]{Img/TFT_Display_Module_test.jpg}
+	\caption{TFT Display Module enhedstest}
+	\label{fig:TFT_Display_Module_test}
+\end{figure}
