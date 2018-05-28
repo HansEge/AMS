@@ -120,5 +120,14 @@ Interrupt rutinen minder meget om masterens receive funktion. Den tjekker hele t
 
 \subsection{Test}
 
-Billede af logic analyzer! og forklarende tekst
+Til test af I2C, har vi gjort brug af en logic analyzer, som bruges til at afkode beskeder der sende med forskellige protokoller. Det har været en stor hjælp til at finde fejl i vores software. Blandt andet fandt vi ud af at hvis UART og I2C blev brugt samtidig, skabte det en stor nok forsinkelse i I2C protokollen. Dette skyldes at der ikke blev sendt et ACK på det rigtige tidspunkt. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 450pt]{Img/I2C_logic.png}
+	\caption{Logic analyzer for I2C}
+	\label{fig:I2C_Logic}
+\end{figure}
+
+På figuren ovenfor kan man se en perfekt I2C transmission. På figuren kan man se at et start condition, starter transmissionen, hvorefter adressen på slaven bliver sendt og at R/Wbit bliver sat højt, hvilket betyder READ. Derfter kommer dataen. I dette tilfælde bliver der sendt h52, hvilket svarer i ASCII svarer til bogstavet 'R'. Et NACK kommer bagefter for at signallere at der ikke er mere data, hvorefter et stop condition blever genereret.
 
