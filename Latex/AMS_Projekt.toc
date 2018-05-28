@@ -13,17 +13,12 @@
 \contentsline {subsection}{\numberline {4.2}Input Capture}{9}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Color Sensor Module Software}{10}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Test}{11}{subsection.4.4}
-<<<<<<< HEAD
 \contentsline {section}{\numberline {5}TFT Display Module}{14}{section.5}
 \contentsline {subsection}{\numberline {5.1}Hardware}{14}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Software}{14}{subsection.5.2}
-=======
-\contentsline {section}{\numberline {5}TFT Display Module}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Hardware}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Software}{13}{subsection.5.2}
->>>>>>> 8f310a6f41ca597c3763cdad6d0048a457e85980
-\contentsline {section}{\numberline {6}I2C kommunikation}{18}{section.6}
-\contentsline {subsection}{\numberline {6.1}I2C master}{18}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}I2C slave}{19}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Test}{20}{subsection.6.3}
-\contentsline {section}{\numberline {7}Konklussion}{22}{section.7}
+\contentsline {section}{\numberline {6}I2C kommunikation}{19}{section.6}
+\contentsline {subsection}{\numberline {6.1}I2C master}{19}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}I2C slave}{20}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Test}{21}{subsection.6.3}
+\contentsline {section}{\numberline {7}Alternative L\IeC {\o }sninger}{23}{section.7}
+\contentsline {section}{\numberline {8}Konklussion}{24}{section.8}
