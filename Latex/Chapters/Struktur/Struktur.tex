@@ -50,11 +50,37 @@ Dernæst implementerede vi WriteData, som tilnærmelsesvis ligner WriteCommand b
 \end{figure}
 
 
-I vores DisplayInit() som vi kalder en gang i koden til at Initialisere displayet, starter vi med at sætte vores Control Pins som output samt sætte dem høje. Dernæst bliver RST sat lav i 300ms, det skyldes at der i databladet på side 230 står minimum 120ms, så det er sat til 300ms for at være på den sikre side. Efter vi igen sætter RST igen bliver sat høj, skal vi igen vente 120ms før vi må kalde SleepOut Command, derfor indsætter et delay på 130ms. 
+I vores DisplayInit() som vi kalder en gang i koden til at Initialisere displayet, starter vi med at sætte vores Control Pins som outputs, samt sætte dem høje. Dernæst bliver RST sat lav i 300ms, det skyldes at der i databladet på side 230 står minimum 120ms, så det er sat til 300ms for at være på den sikre side. Efter vi igen sætter RST igen bliver sat høj, skal vi igen vente 120ms før vi må kalde SleepOut Command, derfor indsætter et delay på 130ms. Herefter vækkes displayet med Sleepout() kommandoen efterfulgt af Displayon(). Begge disse kommandoer er at finde i databladet på side 83. Den kommando der bliver sendt til MemoryAccessControl() sørger for at sætte rækkefølgen til BGR i stedet for RGB. Til sidst bliver en kommando sendt til InterfacePixelFormat(), denne kommando fortæller displayet at vi ønsker at køre med 16bit pr. pixel se side 134 i databladet. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 350pt]{Img/DisplayInit_Code.png}
+	\includegraphics[width = 300pt]{Img/DisplayInit_Code.png}
 	\caption{DisplayInit kode}
 	\label{fig:DisplayInit_Code}
 \end{figure}
+
+
+Efter at have initialiseret og opsat displayet efter egen ønske. Var den næste opgave at kunne skrive tal og bogstaver ud på vores display. Til dette benyttede vi os af et program ved navn ’TheDotFactory’. Vi fik programmet til at udskrive et kæmpe array, som indeholder alle symboler, tal samt bogstaver vi kunne havde brug for. Sammen med et tilhørende array, der fortæller længden af hvert symbol samt dens offset. Disse to arrays genereret af programmet ’TheDotFactory’ har vi lagt ind i en h-fil ved navn ”DotFactory.h”.
+På den efterfølgende \autoref{TFTDisplayFunktioner} vil funktionerne vi har benyttet blive overordnet blive beskrevet, i vores vedlagte kode vil en mere detaljeret gennemgang af koden kunne ses, i form af kommentar til hver linje kode i den vedlagte kode. 
+
+\newpage
+
+\begin{table}[]
+	\centering
+	\caption{Funktioner benyttet til TFT Display}
+	\label{TFTDisplayFunktioner}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Navn}         & \textbf{Beskrivelse}                                                                                                                                                              \\ \hline
+		WritePixel() & \begin{tabular}[c]{@{}l@{}}Formået er at bestemme farven for en pixel. Tager imod 3 parameter.\\ Rød 0-31, grøn 0-63, blå 0-31 smider dem ind i write data.\end{tabular} \\ \hline
+		SetColomnAddress() & \begin{tabular}[c]{@{}l@{}}Formålet er at kunne skrive til en hel linje lodret på en gang.\\ Tager imod to parameter start og stop.\end{tabular}                                                                                                                                                                         \\ \hline
+		SetPageAddress() & \begin{tabular}[c]{@{}l@{}} Formålet er at kunne skrive til en hel linje vandret på en gang.\\ Tager imod to parameter start og stop. \end{tabular}                                                                                                                                                                        \\ \hline
+		FillRectangle() & \begin{tabular}[c]{@{}l@{}} Meningen er at fylde et rektangel med én farve.\\ Tager imod syv parametre: start-x, start-y, bredde, højde,\\ rød, blå og grøn.  \end{tabular}  \\ \hline
+		getSymbolParameters() &  \begin{tabular}[c]{@{}l@{}} Den tager tre parametre, start x og start y samt længden på det\\ givne symbol. Formået for denne funktion er at opdele alle de\\ nødvendige informationer for et symbol. Så som længen af symbolet\\ i byte, offset i forhold til arrayet fra TheDotFactory, offset i forhold\\ til displayet. Denne information bliver så videregivet til drawSymbol(). \end{tabular}   \\ \hline
+		drawSymbol() &  \begin{tabular}[c]{@{}l@{}}Tager information videregivet fra getSymbolParameters(). Finder det\\ givne symbol i arrayet fra TheDotFactory ved hjælp af informationen.\\ Herefter gennemgås symbolet bit for bit, og displayet\\ en sort pixel eller hvid pixel alt efter om det er et ’1’ eller ’0’\\ på den givne plads.  \end{tabular}                                                                                                                                                                                         \\ \hline
+		writeString() & \begin{tabular}[c]{@{}l@{}} Tager imod en string. Hvorefter den gennemgår denne string symbol\\ for symbol og kalder getSymbolParameters () som videre kalder\\ drawSymbol() på hvert symbol. Med mindre at symbolet er et\\ mellemrum, så plusses x-positionen med seks.  \end{tabular}                                                                                                                                                                                         \\ \hline
+		writeInt() &  \begin{tabular}[c]{@{}l@{}} Tager imod en long int. Hvorefter den int bliver lagt over i et array.\\ Og på hver plads i dette array bliver getSymbolParameters kaldt,\\ efter det første tal er detekteret.   \end{tabular}                                                                                                                                                                                         \\ \hline
+		\begin{tabular}[c]{@{}l@{}} DrawRed(),\\ DrawGreen(),\\ DrawBlue() \end{tabular}  &  \begin{tabular}[c]{@{}l@{}} Meningen med denne funktion er at vise en søjle i enten farven rød,\\ grøn eller blå alt efter hvilken af disse tre funktioner der bliver kaldt.\\ Over denne søjle skal så skrives et tal, som følger søjlens højde.\\ Funktionerne modtager to int, den første int angiver tallet som skal\\ stå over søjlen, den anden int angiver højden på søjlen. Tallet\\ bliver vist ved hjælp af funktionen writeInt(), og søjlen bliver vist ved\\ hjælp af funktionen FillRectangle(). Den eneste forskel på disse tre\\ funktioner er farven af søjlen.  \end{tabular} \\ \hline
+		drawTotal() &  \begin{tabular}[c]{@{}l@{}} Meningen med denne funktion er at den skal tage tre parametre som\\ antallet af hver farve detekteret. Disse tre parametre bliver så lagt\\ sammen i en totalCount variable, og udregnet hvor stor en procentdel\\ de hver udgør at det samlet antal optællinger. Den procentdel\\ udgør så hvor høj hver enkel søjle skal være. Så vil DrawRed(),\\ DrawGreen() og DrawBlue() blive kaldt hvor de tre parametre vil\\ være tallene over søjlerne, højden vil være den udregnede\\ procentdel og totalCount vil blive vist i øverste højre hjørne\\ ved hjælp af writeInt().  \end{tabular}                                                                                                                                                                                         \\ \hline
+	\end{tabular}
+\end{table}
