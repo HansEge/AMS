@@ -94,5 +94,15 @@ En enhedstest er blevet lavet da modulet var færdigt. Resultatet af denne test 
 	\label{fig:Test_all}
 \end{figure}
 
-Til test af color sensoren, er der gjort brug af Input Capture programmet sammen med UART kommunikation til en PC. Sensorens output pin blev koblet til input capture pin'en, og tre målinger blev taget, én for hver farve(RGB). Farven med den højeste frekvens blev desuden sendt med som et bogstav, enten R B eller G. Som farvet forsøgsemne, blev tre forskelligt farvet stykker papir brugt. For at få så godt et resultat som muligt, skulle papiret holdes max 1cm fra sensoren, dog var det grønne papir stadig svært at opfange for sensoren. På \autoref{fig:Test_all} kan man se terminal outputtet fra sensoren. Tallene til venstre for "Red", "Green" og "blue" er frekvensen målt ved den farve. Man kan se hvordan sensoren har svært ved at opfange den grønne farve. Dette skyldes højst sandsynligt at farven ikke var den samme som databladet brugte til at teste med($\lambda = 524 nm$)\cite{man:TC3200}. Udover den grønne farve ikke passede helt, kan sensoren stadig skelne imellem de tre forskllige farver.
+Til test af color sensoren, er der gjort brug af Input Capture programmet sammen med UART kommunikation til en PC. Sensorens output pin blev koblet til input capture pin'en, og tre målinger blev taget, én for hver farve(RGB). Farven med den højeste frekvens blev desuden sendt med som et bogstav, enten R B eller G. Som farvet forsøgsemne, blev tre forskelligt farvet stykker papir brugt. For at få så godt et resultat som muligt, skulle papiret holdes max 1cm fra sensoren, dog var det grønne papir stadig svært at opfange for sensoren. På \autoref{fig:Test_all} kan man se terminal outputtet fra sensoren. Tallene til venstre for "Red", "Green" og "blue" er frekvensen målt ved den farve. Man kan se hvordan sensoren har svært ved at opfange den grønne farve. Dette skyldes højst sandsynligt at farven ikke var den samme som databladet brugte til at teste med($\lambda = 524 nm$)\cite{man:TC3200}. Udover den grønne farve ikke passede helt, kan sensoren stadig skelne imellem de tre forskllige farver. 
+
+Test opstillingen kan ses på figuren nedenunder:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 300pt]{Img/TestOpstilling.jpg}
+	\caption{Test opstilling af Color Sensor Modulet}
+	\label{fig:Test_opstilling}
+\end{figure}
+
 

@@ -58,10 +58,6 @@ int main(void)
 
 		//writeString("12",50,100);
 		
-		countRed++;
-		countRed++;
-		countBlue++;
-		
 		if (i==2)
 		{
 			countBlue++;

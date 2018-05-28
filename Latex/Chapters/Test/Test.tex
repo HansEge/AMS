@@ -129,5 +129,13 @@ Til test af I2C, har vi gjort brug af en logic analyzer, som bruges til at afkod
 	\label{fig:I2C_Logic}
 \end{figure}
 
-På figuren ovenfor kan man se en perfekt I2C transmission. På figuren kan man se at et start condition, starter transmissionen, hvorefter adressen på slaven bliver sendt og at R/Wbit bliver sat højt, hvilket betyder READ. Derfter kommer dataen. I dette tilfælde bliver der sendt h52, hvilket svarer i ASCII svarer til bogstavet 'R'. Et NACK kommer bagefter for at signallere at der ikke er mere data, hvorefter et stop condition blever genereret.
+På figuren ovenfor kan man se en perfekt I2C transmission. På figuren kan man se at et start condition, starter transmissionen, hvorefter adressen på slaven bliver sendt og at R/Wbit bliver sat højt, hvilket betyder READ. Derfter kommer dataen. I dette tilfælde bliver der sendt h52, hvilket svarer i ASCII svarer til bogstavet 'R'. Et NACK kommer bagefter for at signallere at der ikke er mere data, hvorefter et stop condition blever genereret. Testopstillingen kan ses nedenunder.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 450pt]{Img/TestOpstilling.jpg}
+	\caption{Test opstilling af I2C}
+	\label{fig:I2C_Test}
+\end{figure}
+
 
