@@ -149,34 +149,34 @@ void WriteCommand(unsigned int command){
 		WritePixel(Red,Green,Blue);
  }
  
-void writeLetterHelper(int length_of_letter, int startX, int startY){
+void getSymbolParameters(int length_of_symbol, int startX, int startY){
 	//Makes sure to not override the previous letter.
 	if (startX != checkX)
 	{
 		checkX = startX;
 		start_x = startX;
 	}
-	//the first parameter is the length of the letter, the second is th offset. Therefore to get the length of the letter 
+	//the first parameter is the length of the letter, the second is the offset. Therefore to get the length of the letter 
 	// I have to multiply by 2. 
-	length_of_letter = length_of_letter*2; //The parameters from array_carrier in the DotFactory.h
+	length_of_symbol = length_of_symbol*2; //The parameters from array_carrier in the DotFactory.h
 	
 	// is the length of the chosen character in the DotFactory BitMap[]. 
-	int length_count = array_carrier[length_of_letter+3]-array_carrier[length_of_letter+1];
+	int length_count = symbol_carrier[length_of_symbol+3]-symbol_carrier[length_of_symbol+1];
 	
 	//is the offset of where in the DotFactory BitMap[] to read from.
-	unsigned int offset_letter = array_carrier[length_of_letter+1];
+	unsigned int offset_symbol = symbol_carrier[length_of_symbol+1];
 	//A function to return the length of letter en whole byte
-	int fixed_letter = lengthOfFixedLetter(length_of_letter); 	
+	int fixed_letter = lengthOfFixedSymbol(length_of_symbol); 	
 	
-	drawLetter(bogstaver,fixed_letter,length_count,start_x,startY, offset_letter, length_of_letter);
+	drawSymbol(symbols,fixed_letter,length_count,start_x,startY, offset_symbol);
 	
 	//prepares the offset for next letter.
-	start_x = start_x+array_carrier[length_of_letter]+1; 
+	start_x = start_x+symbol_carrier[length_of_symbol]+1; 
 		
 }
-int lengthOfFixedLetter(int length_of_letter){
-	int fixed_letter = array_carrier[length_of_letter]/8;
-	int modulus_fixed_letter = array_carrier[length_of_letter]%8;
+int lengthOfFixedSymbol(int length_of_symbol){
+	int fixed_letter = symbol_carrier[length_of_symbol]/8;
+	int modulus_fixed_letter = symbol_carrier[length_of_symbol]%8;
 	if(modulus_fixed_letter>0){
 		fixed_letter++;
 	} 
@@ -184,7 +184,7 @@ int lengthOfFixedLetter(int length_of_letter){
 }
 
 
-void drawLetter(const uint8_t bitmap[],int length,int length_count,int startx,int starty, int letter, int length_of_letter){
+void drawSymbol(const uint8_t bitmap[],int length,int length_count,int startx,int starty, int letter){
 	//Sets starts position on x-axis 
 	int startX = startx;
 	//Sets stop position on x-axis
@@ -228,25 +228,6 @@ void drawLetter(const uint8_t bitmap[],int length,int length_count,int startx,in
 		}
 	}
 	
-	//starY = starty;
-	//int modulus_fixed_letter = array_carrier[length_of_letter]%8;
-	//
-	//for (int i=0; i<length_count; i++)
-	//{
-		//if (modulus_fixed_letter == 0)
-		//{
-			//modulus_fixed_letter = 8;
-		//}
-		//SetPageAddress(startx+(length*8-(8-modulus_fixed_letter)),startx+(length*8-(8-modulus_fixed_letter))+7); //set white, where the character stopped
-		//SetColomnAddress(starY,starY);
-		//MemoryWrite();
-		//for (int j=0; j<8; j++)
-		//{WritePixel(31,31,63);}
-		//starY++;
-	//}
-	
-	
-
 
 }
 
@@ -267,7 +248,7 @@ void writeString(char str[],int startx, int starty){
 		int space = temp[j]-33;
 		if (space != -1)
 		{
-				writeLetterHelper(space,startx,starty);
+				getSymbolParameters(space,startx,starty);
 		}
 		else
 		{
@@ -292,7 +273,7 @@ void writeInt(long int num, int startX, int startY){
 		if (number[i] != 0 | num_flag == 1 )
 		{
 			//number[i]+15 to make it fir the bit map.
-			writeLetterHelper(number[i]+15,startX,startY);
+			getSymbolParameters(number[i]+15,startX,startY);
 			num_flag = 1;
 		}
 	}
@@ -302,31 +283,31 @@ void writeInt(long int num, int startX, int startY){
 
 void drawRed(int count, int height, int realHeight){
 	int _realHeight = 139 - realHeight;
+	writeInt(count,140,60+_realHeight);
 	FillRectangle(130,100+_realHeight,50,height-_realHeight,31,31,63);
 	FillRectangle(130,100+_realHeight,50,height-_realHeight,31,0,0);
-	writeInt(count,140,40+_realHeight);
 }
 
 void drawGreen(int count, int height, int realHeight){
 	int _realHeight = 139 - realHeight;
+	writeInt(count,40,60+_realHeight);
 	FillRectangle(30,100+_realHeight,50,height-_realHeight,31,31,63);
 	FillRectangle(30,100+_realHeight,50,height-_realHeight,0,31,0);
-	writeInt(count,40,40+_realHeight);
 }
 
 void drawBlue(int count, int height, int realHeight){
 	int _realHeight = 139 - realHeight;
+	writeInt(count,240,60+_realHeight);
 	FillRectangle(230,100+_realHeight,50,height-_realHeight,31,31,63);
 	FillRectangle(230,100+_realHeight,50,height-_realHeight,0,0,31);
-	writeInt(count,240,40+_realHeight);
 }
 
 void drawTotal(float Red, float Green, float Blue){
 	int totalCount = Red + Green + Blue;
 	
-	int heightRed = (Red/totalCount)*149;
-	int heightGreen = (Green/totalCount)*149;
-	int heightBlue = (Blue/totalCount)*149;
+	int heightRed = (Red/totalCount)*139;
+	int heightGreen = (Green/totalCount)*139;
+	int heightBlue = (Blue/totalCount)*139;
 	
 	
 	
