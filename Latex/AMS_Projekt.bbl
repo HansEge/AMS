@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{man:mega2560Kap17}
+ATMEL.
+\newblock {\em ATmega 2560 datasheet kapitel 17}, 1.0 edition, Juli 2014.
+
+\bibitem{man:mega2560Kap24}
+ATMEL.
+\newblock {\em ATmega 2560 datasheet kapitel 24}, 1.0 edition, Juli 2014.
+
+\bibitem{app:ColorSensor}
+Source Code.
+\newblock Colorsensor.c, Juni 2018.
+
+\bibitem{man:ILI9341}
+ILITEX.
+\newblock {\em a-Si TFT LCD Single Chip Driver 240RGBx320 Resolution and 262K
+  color}, Juni 2011.
+
+\bibitem{man:TC3200}
+TAOS.
+\newblock {\em Programmable color light-to-frequency converter datasheet}, 1.0
+  edition, Juli 2009.
+
+\end{thebibliography}

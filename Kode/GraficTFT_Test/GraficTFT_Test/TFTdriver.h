@@ -5,7 +5,7 @@
  *  Author: Liver
  */ 
 
-#include <avr/interrupt.h>
+
 
 void DisplayInit();
 void DisplayOff();

@@ -66,15 +66,17 @@ void WriteCommand(unsigned int command){
 		 
  }
  
- DisplayInit(){
+ void DisplayInit(){
 	 //Sets the control pins as output and set them high
 	 //Sets data pis as output
 	 DDRG |= 0b00000111;
 	 DDRD |= 0b10000000;
+	 DDRD &= 0b11111011;
 	 DDRA = 0xFF;
 	 DDRC = 0xFF;
 	 PORTG |= 0b00000111;
 	 PORTD |= 0b10000000;
+	 PORTD &= 0b11111011;
 
 	 
 	 
@@ -317,27 +319,16 @@ void drawTotal(float Red, float Green, float Blue){
 	drawGreen(Green, 139, heightGreen);
 	drawBlue(Blue, 139, heightBlue);
 	
-	writeInt(totalCount, 250, 10);
+	writeInt(totalCount, 260, 10);
 	
 }
 
 void initEXTInterrupt()
 {
-	//Sets button pin as input with internal pullup resistor
-	DDRD |= 0b00001000;
-	PORTD |= 0b00000000;
+	//Sets button pin as input
 	
-	//Trigger on falling edge, activate external intterupt on ISR3
-	EICRA |= 0b10000000;
-	EIMSK |= 0b00001000;
+	//Trigger on rising edge, activate external intterupt on ISR2
 	
-	//Enable interrupt
-	sei();
+	EICRA = 0b00110000;
+	EIMSK = 0b00000100;
 }
-
-
-
-
-
-
- 
