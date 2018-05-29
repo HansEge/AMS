@@ -20,17 +20,27 @@ Hvis man kigger på Graphic TFT Display, kan den fungere i fire forskellige MCU-
 \end{figure}
 
 I og med at vi udelukkende ønsker at skrive til vores display, vælger vi at ignorere læse kommandoerne og udelukkende fokusere på at skrive kommandoerne. Derfor er RDX altid sat høj.
-Først implementerede vi WriteCommand i vores kode som ses på figur \autoref{fig:WriteCommand_Code} nedenfor
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width = 300pt]{Img/WriteCommand_Code.png}
-	\caption{WriteCommand kode}
-	\label{fig:WriteCommand_Code}
-\end{figure}
+Først implementerede vi WriteCommand i vores kode som ses lige nedenfor.
 
 
-Som det ses på figur \autoref{fig:MCU-Interface_Mode} fra databadet skal DCX og CSX sættes lavt, samt trigger kommandoen på WRX stigende flanke, derfor sættes WRX lav til at starte med. På figur \autoref{fig:Timedelays} nedenfor ses et skema over de tidsforsinkelser der opstår, ved forskellige operationer. Her ses det at når WRX sættes lav, opstår der en forsinkelse på min 15ns. Derfor er der indsat en NOP() funktion i koden, hvilket står for ”No Operation” som vil sige at programmet laver ingenting i en cyklus. Med en MCPU frekvens på 16Mhz svare det til 62,5ns. Herefter sættes WRX høj igen for at trigger kommandoen efterfulgt af endnu en NOP() funktion da der opstår samme forsinkelse når WRX sættes høj.
+\begin{lstlisting}
+void WriteCommand(unsigned int command)
+{
+	DATA_PORT_LOW = command;
+
+	DC_PORT &= ~(1<<DC_BIT);
+	CS_PORT &= ~(1<<CS_BIT);
+	WR_PORT &= ~(1<<WR_BIT);
+	
+	_NOP();
+	WR_PORT |= (1<<WR_BIT);
+	_NOP();
+}
+
+\end{lstlisting}
+
+
+Som det ses på figur \autoref{fig:MCU-Interface_Mode} fra databadet\cite{man:ILI9341} skal DCX og CSX sættes lavt, samt trigger kommandoen på WRX stigende flanke, derfor sættes WRX lav til at starte med. På figur \autoref{fig:Timedelays} nedenfor ses et skema over de tidsforsinkelser der opstår, ved forskellige operationer. Her ses det at når WRX sættes lav, opstår der en forsinkelse på min 15ns. Derfor er der indsat en NOP() funktion i koden, hvilket står for ”No Operation” som vil sige at programmet laver ingenting i en cyklus. Med en MCPU frekvens på 16Mhz svare det til 62,5ns. Herefter sættes WRX høj igen for at trigger kommandoen efterfulgt af endnu en NOP() funktion da der opstår samme forsinkelse når WRX sættes høj.
 
 \begin{figure}[H]
 	\centering
@@ -40,24 +50,53 @@ Som det ses på figur \autoref{fig:MCU-Interface_Mode} fra databadet skal DCX og
 \end{figure}
 
 
-Dernæst implementerede vi WriteData, som tilnærmelsesvis ligner WriteCommand bortset fra at DCX skal sættes høj i stedet for lav. Koden for WriteData ses nedenfor på figur \autoref{fig:WriteData_Code}. På samme måde som WriteCommand trigger WriteData på en voksende flanke på WRX, derfor sættes WRX først lav og dernæst høj, med indsat NOP() funktioner for at tage højde for tidsforsinkelser. 
+Dernæst implementerede vi WriteData, som tilnærmelsesvis ligner WriteCommand bortset fra at DCX skal sættes høj i stedet for lav. Koden for WriteData ses lige nedenfor. På samme måde som WriteCommand trigger WriteData på en voksende flanke på WRX, derfor sættes WRX først lav og dernæst høj, med indsat NOP() funktioner for at tage højde for tidsforsinkelser. 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width = 350pt]{Img/WriteData_Code.png}
-	\caption{WriteData kode}
-	\label{fig:WriteData_Code}
-\end{figure}
+\begin{lstlisting}
+void WriteData(unsigned int data)
+{
+	DATA_PORT_HIGH = data >> 8;
+	DATA_PORT_LOW = data;
+
+	DC_PORT |= (1<<DC_BIT);
+	CS_PORT &= ~(1<<CS_BIT);
+	WR_PORT &= ~(1<<WR_BIT);
+
+	_NOP();
+	WR_PORT |= (1<<WR_BIT);
+	_NOP();
+}
+\end{lstlisting}
 
 
 I vores DisplayInit() som vi kalder en gang i koden til at Initialisere displayet, starter vi med at sætte vores Control Pins som outputs, samt sætte dem høje. Dernæst bliver RST sat lav i 300ms, det skyldes at der i databladet på side 230 står minimum 120ms, så det er sat til 300ms for at være på den sikre side. Efter vi igen sætter RST igen bliver sat høj, skal vi igen vente 120ms før vi må kalde SleepOut Command, derfor indsætter et delay på 130ms. Herefter vækkes displayet med Sleepout() kommandoen efterfulgt af Displayon(). Begge disse kommandoer er at finde i databladet på side 83. Den kommando der bliver sendt til MemoryAccessControl() sørger for at sætte rækkefølgen til BGR i stedet for RGB. Til sidst bliver en kommando sendt til InterfacePixelFormat(), denne kommando fortæller displayet at vi ønsker at køre med 16bit pr. pixel se side 134 i databladet. 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width = 300pt]{Img/DisplayInit_Code.png}
-	\caption{DisplayInit kode}
-	\label{fig:DisplayInit_Code}
-\end{figure}
+
+\begin{lstlisting}
+DisplayInit()
+{
+	DDRG |= 0b00000111;
+	DDRD |= 0b10000000;
+	DDRA = 0xFF;
+	DDRC = 0xFF;
+	PORTG |= 0b00000111;
+	PORTD |= 0b10000000;
+	
+	RST_PORT &= ~(1<<RST_BIT);
+	_delay_ms(300);
+
+	RST_PORT |= (1<<RST_BIT);
+	_delay_ms(130);
+	
+	SleepOut();
+
+	DisplayOn();
+
+	MemoryAccessControl(0b00001000);
+	
+	InterfacePixelFormat(0b00000101);
+}
+\end{lstlisting}
 
 
 Efter at have initialiseret og opsat displayet efter egen ønske. Var den næste opgave at kunne skrive tal og bogstaver ud på vores display. Til dette benyttede vi os af et program ved navn ’TheDotFactory’. Vi fik programmet til at udskrive et kæmpe array, som indeholder alle symboler, tal samt bogstaver vi kunne havde brug for. Sammen med et tilhørende array, der fortæller længden af hvert symbol samt dens offset. Disse to arrays genereret af programmet ’TheDotFactory’ har vi lagt ind i en h-fil ved navn ”DotFactory.h”.
