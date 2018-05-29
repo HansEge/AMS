@@ -5,6 +5,8 @@
  *  Author: Liver
  */ 
 
+#include <avr/interrupt.h>
+
 void DisplayInit();
 void DisplayOff();
 void DisplayOn();
@@ -31,3 +33,5 @@ void drawGreen(int count, int height, int realHeight);
 void drawBlue(int count, int height, int realHeight);
 
 void drawTotal(float Red, float Green, float Blue);
+
+void initEXTInterrupt();

@@ -75,6 +75,8 @@ void WriteCommand(unsigned int command){
 	 DDRC = 0xFF;
 	 PORTG |= 0b00000111;
 	 PORTD |= 0b10000000;
+
+	 
 	 
 	 //Resest the display (RST low)
 	 RST_PORT &= ~(1<<RST_BIT);
@@ -319,6 +321,19 @@ void drawTotal(float Red, float Green, float Blue){
 	
 }
 
+void initEXTInterrupt()
+{
+	//Sets button pin as input with internal pullup resistor
+	DDRD |= 0b00001000;
+	PORTD |= 0b00000000;
+	
+	//Trigger on falling edge, activate external intterupt on ISR3
+	EICRA |= 0b10000000;
+	EIMSK |= 0b00001000;
+	
+	//Enable interrupt
+	sei();
+}
 
 
 
