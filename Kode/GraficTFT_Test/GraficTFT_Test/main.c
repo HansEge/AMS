@@ -58,11 +58,11 @@ int main(void)
 
 		//writeString("12",50,100);
 		
-		if (i==2)
-		{
-			countBlue++;
-		}
-		i++;
+		countRed++;
+		countRed++;
+		countBlue++;
+		countGreen++;
+	
 		_delay_ms(1000);
 		DisplayOn();
 
