@@ -22,12 +22,10 @@ volatile float countBlue=0;
 
 ISR(INT2_vect)
 {
+	//Make I2C call
 	color = i2c_master_receive(ADDRESS);
+	//Colorfalg
 	COLORFLAG = 1;
-	
-	FillRectangle(0,0,320,240,31,63,31);
-	writeString("Sorterer M&M's",10,10);
-	writeString("Total:",200,10);
 	
 	if (color == 'R' && COLORFLAG == 1)
 	{
@@ -45,11 +43,11 @@ ISR(INT2_vect)
 		COLORFLAG = 0;
 	}
 	
+	//Clears the display and displays the new result
+	FillRectangle(0,0,320,240,31,63,31);
+	writeString("Sorterer M&M's",10,10);
+	writeString("Total:",200,10);
 	drawTotal(countRed, countGreen, countBlue);
-	//countBlue(count);
-	//countRed(count);
-
-	//writeString("12",50,100);
 
 	DisplayOn();
 	_delay_ms(2000);
@@ -57,18 +55,16 @@ ISR(INT2_vect)
 
 int main(void)
 {
-    /* Replace with your application code */
-	
+	//init interrupt
 	sei();
 	initEXTInterrupt();
+	//init Display
 	DisplayInit();
+	//Init I2C 
 	i2c_master_init();
-	int i = 0;
-	//long int i=0;
-	//int count = 0;
-	FillRectangle(0,0,320,240,31,63,31);
-	//int size = sizeof(array)/sizeof(array[0]);
 
+	//clear Display and set text
+	FillRectangle(0,0,320,240,31,63,31);
 	writeString("Sorterer M&M's",10,10);
 	writeString("Total:",200,10);
 

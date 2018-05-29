@@ -3,7 +3,7 @@
 %-------------------------------------------------------------------------------
 
 \section{TFT Display Module}
-TFT Display modulets primære opgave er både at fungere som visuel grænse flade til brugeren, samt at fungere som et slags kontrol modul for hele systemet. Kontrol modul forstået på den måde, at dette modul står for at hente data fra Color Sensor Modulet, og optælle den hentede information. Dette modul afsnit vil beskrive TFT Display modulets funktionalitet, samt overvejelser omkring analyse og design både hardware, softwaremæssigt. I dette afsnit vil kommunikationen mellem TFT Display modulet og resten af systemet også blive beskrevet. 
+TFT Display modulets primære opgave er både at fungere som visuel grænse flade til brugeren, samt at fungere som et slags kontrol modul for hele systemet. Kontrol modul forstået på den måde, at når bruger trykker på knappen på boardet vil det trigger et interrupt, som henter data fra Color Sensor Modulet, optæller den hentede information og displayer det for brugeren.\\ Dette modul afsnit vil beskrive TFT Display modulets funktionalitet, samt overvejelser omkring analyse og design både hardware, softwaremæssigt. I dette afsnit vil kommunikationen mellem TFT Display modulet og resten af systemet også blive beskrevet. 
 
 \subsection{Hardware}
 I arkitekturfasen gik den første overvejelse på hvilket display vi skulle benytte som grænsefladen til brugeren. Vi ønskede et displayet som kunne vise farver og havde en nogenlunde opløsning for give en god visuel oplevelse for brugeren. Da vi først havde opsat kravene for vores display, var selve valget ikke særligt svært. I undervisningen har vi arbejdet med ”Graphic TFT Display” fra lektion 4, dette display opfyldte vores ønskede krav angående opløsning samt muligheden for at vise farver. Derfor faldt valgt ret hurtigt på dette display, da det også spillede sammen med vores Arduino 2560. For at kunne påmontere ”Graphic TFT Display” på Arduino Mega 2560, har vi benyttet os af ”ITDB02 Arduino MEGA shield 2.0”. Databladet for dette shield er vedhæftet XX. I dette datablad er det også markeret hvilke porte ITDB02 shieldet der hører til bestemte indgange på displayet.
@@ -69,7 +69,7 @@ void WriteData(unsigned int data)
 \end{lstlisting}
 
 
-I vores DisplayInit() som vi kalder en gang i koden til at Initialisere displayet, koden sis lige nedenfor. Først sættes vores Control Pins som outputs og høje. Dernæst bliver RST sat lav i 300ms, det skyldes at der i databladet\cite{man:ILI9341} på side 230 står minimum 120ms, så det er sat til 300ms for at være på den sikre side. Efter vi igen sætter RST igen bliver sat høj, skal vi igen vente 120ms før vi må kalde SleepOut Command, derfor indsætter et delay på 130ms. Herefter vækkes displayet med Sleepout() kommandoen efterfulgt af Displayon(). Begge disse kommandoer er at finde i databladet\cite{man:ILI9341} på side 83. Den kommando der bliver sendt til MemoryAccessControl() sørger for at sætte rækkefølgen til BGR i stedet for RGB. Til sidst bliver en kommando sendt til InterfacePixelFormat(), denne kommando fortæller displayet at vi ønsker at køre med 16bit pr. pixel se side 134 i databladet\cite{man:ILI9341}. 
+I vores DisplayInit() som vi kalder en gang i koden til at Initialisere displayet, koden ses lige nedenfor. Først sættes vores Control Pins som outputs og høje. Port D bit 3 bliver sat lavt, så den er klar til at læse, hvis bruger trykker på knappen. Dernæst bliver RST sat lav i 300ms, det skyldes at der i databladet\cite{man:ILI9341} på side 230 står minimum 120ms, så det er sat til 300ms for at være på den sikre side. Efter vi igen sætter RST igen bliver sat høj, skal vi igen vente 120ms før vi må kalde SleepOut Command, derfor indsætter et delay på 130ms. Herefter vækkes displayet med Sleepout() kommandoen efterfulgt af Displayon(). Begge disse kommandoer er at finde i databladet\cite{man:ILI9341} på side 83. Den kommando der bliver sendt til MemoryAccessControl() sørger for at sætte rækkefølgen til BGR i stedet for RGB. Til sidst bliver en kommando sendt til InterfacePixelFormat(), denne kommando fortæller displayet at vi ønsker at køre med 16bit pr. pixel se side 134 i databladet\cite{man:ILI9341}. 
 
 
 \begin{lstlisting}
@@ -77,10 +77,12 @@ DisplayInit()
 {
 	DDRG |= 0b00000111;
 	DDRD |= 0b10000000;
+	DDRD &= 0b11111011;
 	DDRA = 0xFF;
 	DDRC = 0xFF;
 	PORTG |= 0b00000111;
 	PORTD |= 0b10000000;
+	PORTD &= 0b11111011;
 	
 	RST_PORT &= ~(1<<RST_BIT);
 	_delay_ms(300);

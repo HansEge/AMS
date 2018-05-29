@@ -821,19 +821,19 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x209f
+.debug_info     0x00000000     0x2095
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_info    0x00000bbc      0x1f7 i2c.o
- .debug_info    0x00000db3      0x39f main.o
- .debug_info    0x00001152      0xf4d TFTdriver.o
+ .debug_info    0x00000db3      0x395 main.o
+ .debug_info    0x00001148      0xf4d TFTdriver.o
 
-.debug_abbrev   0x00000000     0x1024
+.debug_abbrev   0x00000000     0x1015
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0xb1a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_abbrev  0x00000b1a       0xf8 i2c.o
- .debug_abbrev  0x00000c12      0x142 main.o
- .debug_abbrev  0x00000d54      0x2d0 TFTdriver.o
+ .debug_abbrev  0x00000c12      0x133 main.o
+ .debug_abbrev  0x00000d45      0x2d0 TFTdriver.o
 
 .debug_line     0x00000000      0xbd0
  *(.debug_line .debug_line.* .debug_line_end)
@@ -848,14 +848,14 @@ END GROUP
  .debug_frame   0x000000c8       0x94 main.o
  .debug_frame   0x0000015c      0x3d4 TFTdriver.o
 
-.debug_str      0x00000000      0x8ea
+.debug_str      0x00000000      0x950
  *(.debug_str)
  .debug_str     0x00000000      0x3e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_str     0x000003e6      0x1ff i2c.o
-                                0x233 (size before relaxing)
- .debug_str     0x000005e5       0xe6 main.o
-                                0x289 (size before relaxing)
- .debug_str     0x000006cb      0x21f TFTdriver.o
+ .debug_str     0x000003e6      0x204 i2c.o
+                                0x238 (size before relaxing)
+ .debug_str     0x000005ea       0xe6 main.o
+                                0x28e (size before relaxing)
+ .debug_str     0x000006d0      0x280 TFTdriver.o
                                 0x47f (size before relaxing)
 
 .debug_loc      0x00000000     0x1785
