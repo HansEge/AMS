@@ -1,5 +1,5 @@
 /*
- * GraficTFT_Test.c
+ * $safeprojectname$.c
  *
  * Created: 22-03-2018 09:34:40
  * Author : Liver

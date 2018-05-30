@@ -1,5 +1,5 @@
 
-GraficTFT_Test.elf:     file format elf32-avr
+TFT_Display_Module.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -23,11 +23,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  00000530  00000000  00000000  00006364  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00000950  00000000  00000000  00006894  2**0
+ 10 .debug_str    000008ea  00000000  00000000  00006894  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00001785  00000000  00000000  000071e4  2**0
+ 11 .debug_loc    00001785  00000000  00000000  0000717e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000198  00000000  00000000  00008969  2**0
+ 12 .debug_ranges 00000198  00000000  00000000  00008903  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -729,6 +729,12 @@ int main(void)
 
 0000042c <WriteCommand>:
      42c:	88 b9       	out	0x08, r24	; 8
+	 WriteCommand(0x2C);
+ }
+ 
+ //Red 0-31, Green 0-63, blue 0-31
+ void WritePixel(unsigned char Red, unsigned char Blue, unsigned char Green){
+	 WriteData((Red<<11)|(Green<<5)|Blue);
      42e:	5f 98       	cbi	0x0b, 7	; 11
      430:	a1 98       	cbi	0x14, 1	; 20
      432:	a2 98       	cbi	0x14, 2	; 20
@@ -833,6 +839,8 @@ int main(void)
      4dc:	08 95       	ret
 
 000004de <SetColomnAddress>:
+ }
+ void SetColomnAddress(unsigned int Start,unsigned int End){
      4de:	0f 93       	push	r16
      4e0:	1f 93       	push	r17
      4e2:	cf 93       	push	r28
@@ -841,22 +849,28 @@ int main(void)
      4e8:	d9 2f       	mov	r29, r25
      4ea:	16 2f       	mov	r17, r22
      4ec:	c7 2f       	mov	r28, r23
+	 WriteCommand(0x2A);
      4ee:	8a e2       	ldi	r24, 0x2A	; 42
      4f0:	90 e0       	ldi	r25, 0x00	; 0
      4f2:	9c df       	rcall	.-200    	; 0x42c <WriteCommand>
+	 WriteData(Start>>8);
      4f4:	8d 2f       	mov	r24, r29
      4f6:	90 e0       	ldi	r25, 0x00	; 0
      4f8:	a1 df       	rcall	.-190    	; 0x43c <WriteData>
+	 WriteData(Start);
      4fa:	80 2f       	mov	r24, r16
      4fc:	9d 2f       	mov	r25, r29
      4fe:	9e df       	rcall	.-196    	; 0x43c <WriteData>
+	 WriteData(End>>8);
      500:	8c 2f       	mov	r24, r28
      502:	90 e0       	ldi	r25, 0x00	; 0
      504:	9b df       	rcall	.-202    	; 0x43c <WriteData>
+	 WriteData(End);
      506:	81 2f       	mov	r24, r17
      508:	9c 2f       	mov	r25, r28
      50a:	98 df       	rcall	.-208    	; 0x43c <WriteData>
      50c:	df 91       	pop	r29
+ }
      50e:	cf 91       	pop	r28
      510:	1f 91       	pop	r17
      512:	0f 91       	pop	r16
@@ -864,6 +878,8 @@ int main(void)
 
 00000516 <SetPageAddress>:
      516:	0f 93       	push	r16
+ 
+ void SetPageAddress(unsigned int Start,unsigned int End){
      518:	1f 93       	push	r17
      51a:	cf 93       	push	r28
      51c:	df 93       	push	r29
@@ -871,22 +887,28 @@ int main(void)
      520:	d9 2f       	mov	r29, r25
      522:	16 2f       	mov	r17, r22
      524:	c7 2f       	mov	r28, r23
+	 	 WriteCommand(0x2B);
      526:	8b e2       	ldi	r24, 0x2B	; 43
      528:	90 e0       	ldi	r25, 0x00	; 0
      52a:	80 df       	rcall	.-256    	; 0x42c <WriteCommand>
+	 	 WriteData(Start>>8);
      52c:	8d 2f       	mov	r24, r29
      52e:	90 e0       	ldi	r25, 0x00	; 0
      530:	85 df       	rcall	.-246    	; 0x43c <WriteData>
+	 	 WriteData(Start);
      532:	80 2f       	mov	r24, r16
      534:	9d 2f       	mov	r25, r29
      536:	82 df       	rcall	.-252    	; 0x43c <WriteData>
+	 	 WriteData(End>>8);
      538:	8c 2f       	mov	r24, r28
      53a:	90 e0       	ldi	r25, 0x00	; 0
      53c:	7f df       	rcall	.-258    	; 0x43c <WriteData>
+	 	 WriteData(End);
      53e:	81 2f       	mov	r24, r17
      540:	9c 2f       	mov	r25, r28
      542:	7c df       	rcall	.-264    	; 0x43c <WriteData>
      544:	df 91       	pop	r29
+ }
      546:	cf 91       	pop	r28
      548:	1f 91       	pop	r17
      54a:	0f 91       	pop	r16
@@ -894,6 +916,8 @@ int main(void)
 
 0000054e <FillRectangle>:
      54e:	8f 92       	push	r8
+ 
+ void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width, unsigned int Height, unsigned char Red, unsigned char Blue, unsigned char Green){
      550:	9f 92       	push	r9
      552:	af 92       	push	r10
      554:	bf 92       	push	r11
@@ -908,15 +932,19 @@ int main(void)
      566:	eb 01       	movw	r28, r22
      568:	4a 01       	movw	r8, r20
      56a:	59 01       	movw	r10, r18
+	 SetPageAddress(StartX,StartX+Width);
      56c:	bc 01       	movw	r22, r24
      56e:	64 0f       	add	r22, r20
      570:	75 1f       	adc	r23, r21
      572:	d1 df       	rcall	.-94     	; 0x516 <SetPageAddress>
+	 SetColomnAddress(StartY,StartY+Height);
      574:	be 01       	movw	r22, r28
      576:	6a 0d       	add	r22, r10
      578:	7b 1d       	adc	r23, r11
      57a:	ce 01       	movw	r24, r28
+	 MemoryWrite();
      57c:	b0 df       	rcall	.-160    	; 0x4de <SetColomnAddress>
+	 for(unsigned long i=0; i<((unsigned long)Width*Height);i++)
      57e:	ab df       	rcall	.-170    	; 0x4d6 <MemoryWrite>
      580:	94 01       	movw	r18, r8
      582:	d5 01       	movw	r26, r10
@@ -927,6 +955,12 @@ int main(void)
      58c:	68 2b       	or	r22, r24
      58e:	69 2b       	or	r22, r25
      590:	e1 f0       	breq	.+56     	; 0x5ca <FillRectangle+0x7c>
+	 WriteCommand(0x2C);
+ }
+ 
+ //Red 0-31, Green 0-63, blue 0-31
+ void WritePixel(unsigned char Red, unsigned char Blue, unsigned char Green){
+	 WriteData((Red<<11)|(Green<<5)|Blue);
      592:	80 e2       	ldi	r24, 0x20	; 32
      594:	e8 9e       	mul	r14, r24
      596:	70 01       	movw	r14, r0
@@ -945,6 +979,12 @@ int main(void)
      5b0:	76 01       	movw	r14, r12
      5b2:	c8 01       	movw	r24, r16
      5b4:	43 df       	rcall	.-378    	; 0x43c <WriteData>
+ 
+ void FillRectangle(unsigned int StartX, unsigned int StartY, unsigned int Width, unsigned int Height, unsigned char Red, unsigned char Blue, unsigned char Green){
+	 SetPageAddress(StartX,StartX+Width);
+	 SetColomnAddress(StartY,StartY+Height);
+	 MemoryWrite();
+	 for(unsigned long i=0; i<((unsigned long)Width*Height);i++)
      5b6:	8f ef       	ldi	r24, 0xFF	; 255
      5b8:	c8 1a       	sub	r12, r24
      5ba:	d8 0a       	sbc	r13, r24
@@ -955,6 +995,8 @@ int main(void)
      5c4:	ea 04       	cpc	r14, r10
      5c6:	fb 04       	cpc	r15, r11
      5c8:	a1 f7       	brne	.-24     	; 0x5b2 <FillRectangle+0x64>
+		WritePixel(Red,Green,Blue);
+ }
      5ca:	df 91       	pop	r29
      5cc:	cf 91       	pop	r28
      5ce:	1f 91       	pop	r17
@@ -970,6 +1012,12 @@ int main(void)
      5e2:	08 95       	ret
 
 000005e4 <lengthOfFixedSymbol>:
+	//prepares the offset for next letter.
+	start_x = start_x+symbol_carrier[length_of_symbol]+1; 
+		
+}
+int lengthOfFixedSymbol(int length_of_symbol){
+	int fixed_letter = symbol_carrier[length_of_symbol]/8;
      5e4:	88 0f       	add	r24, r24
      5e6:	99 1f       	adc	r25, r25
      5e8:	fc 01       	movw	r30, r24
@@ -984,15 +1032,24 @@ int main(void)
      5fa:	87 95       	ror	r24
      5fc:	96 95       	lsr	r25
      5fe:	87 95       	ror	r24
+	int modulus_fixed_letter = symbol_carrier[length_of_symbol]%8;
+	if(modulus_fixed_letter>0){
      600:	27 70       	andi	r18, 0x07	; 7
      602:	33 27       	eor	r19, r19
      604:	12 16       	cp	r1, r18
      606:	13 06       	cpc	r1, r19
      608:	0c f4       	brge	.+2      	; 0x60c <lengthOfFixedSymbol+0x28>
+		fixed_letter++;
      60a:	01 96       	adiw	r24, 0x01	; 1
+	} 
+	return fixed_letter;
+}
      60c:	08 95       	ret
 
 0000060e <drawSymbol>:
+
+
+void drawSymbol(const uint8_t bitmap[],int length,int length_count,int startx,int starty, int letter){
      60e:	2f 92       	push	r2
      610:	3f 92       	push	r3
      612:	4f 92       	push	r4
@@ -1011,12 +1068,27 @@ int main(void)
      62c:	1f 93       	push	r17
      62e:	cf 93       	push	r28
      630:	df 93       	push	r29
+	//Sets starts position on x-axis 
+	int startX = startx;
+	//Sets stop position on x-axis
+	int stopX= startx+7;
      632:	f9 01       	movw	r30, r18
      634:	37 96       	adiw	r30, 0x07	; 7
+	//Sets start position on y-axis
+	int starY = starty;
+	
+	// this for loop runs trough the full byte length of the letter according to the bitmap from Dotfactory.
+	for (int j=0;j<length_count;j++)
      636:	14 16       	cp	r1, r20
      638:	15 06       	cpc	r1, r21
      63a:	0c f0       	brlt	.+2      	; 0x63e <drawSymbol+0x30>
      63c:	53 c0       	rjmp	.+166    	; 0x6e4 <drawSymbol+0xd6>
+		startX = stopX+1;
+		stopX = stopX+8;
+		
+		//this if loop keep track of the letters length in the x-axis direction. 
+		//if that length is reached it goes the the next y-axis row.
+		if(stopX >= length*8+startx)
      63e:	66 0f       	add	r22, r22
      640:	77 1f       	adc	r23, r23
      642:	66 0f       	add	r22, r22
@@ -1036,22 +1108,54 @@ int main(void)
      65e:	9f 1c       	adc	r9, r15
      660:	6f 01       	movw	r12, r30
      662:	c9 01       	movw	r24, r18
+		
+		// This for loop runs the byte through and checks if every single bit is high or low
+		// if that bit is high a black dot is made, if the bit is low a withe dot is made.
+		for (int i=0; i<8; i++)
+		{
+			if((bitmap[j+letter] & (0b10000000>>i)) != 0)
      664:	68 94       	set
      666:	ee 24       	eor	r14, r14
      668:	e7 f8       	bld	r14, 7
      66a:	f1 2c       	mov	r15, r1
+		//if that length is reached it goes the the next y-axis row.
+		if(stopX >= length*8+startx)
+		{
+			starY++;
+			startX = startx;
+			stopX = startX+7;
      66c:	2e 2e       	mov	r2, r30
      66e:	3f 2e       	mov	r3, r31
+		//this if loop keep track of the letters length in the x-axis direction. 
+		//if that length is reached it goes the the next y-axis row.
+		if(stopX >= length*8+startx)
+		{
+			starY++;
+			startX = startx;
      670:	42 2e       	mov	r4, r18
      672:	53 2e       	mov	r5, r19
+	
+	// this for loop runs trough the full byte length of the letter according to the bitmap from Dotfactory.
+	for (int j=0;j<length_count;j++)
+	{
+		//Set page and colomn address
+		SetPageAddress(startX,stopX);
      674:	b6 01       	movw	r22, r12
      676:	4f df       	rcall	.-354    	; 0x516 <SetPageAddress>
+		SetColomnAddress(starY,starY);
      678:	b8 01       	movw	r22, r16
      67a:	c8 01       	movw	r24, r16
+		MemoryWrite();
      67c:	30 df       	rcall	.-416    	; 0x4de <SetColomnAddress>
      67e:	2b df       	rcall	.-426    	; 0x4d6 <MemoryWrite>
+		
+		// This for loop runs the byte through and checks if every single bit is high or low
+		// if that bit is high a black dot is made, if the bit is low a withe dot is made.
+		for (int i=0; i<8; i++)
      680:	61 2c       	mov	r6, r1
      682:	71 2c       	mov	r7, r1
+		{
+			if((bitmap[j+letter] & (0b10000000>>i)) != 0)
      684:	88 81       	ld	r24, Y
      686:	28 2f       	mov	r18, r24
      688:	30 e0       	ldi	r19, 0x00	; 0
@@ -1065,6 +1169,12 @@ int main(void)
      698:	82 23       	and	r24, r18
      69a:	93 23       	and	r25, r19
      69c:	89 2b       	or	r24, r25
+	 WriteCommand(0x2C);
+ }
+ 
+ //Red 0-31, Green 0-63, blue 0-31
+ void WritePixel(unsigned char Red, unsigned char Blue, unsigned char Green){
+	 WriteData((Red<<11)|(Green<<5)|Blue);
      69e:	21 f0       	breq	.+8      	; 0x6a8 <drawSymbol+0x9a>
      6a0:	80 e0       	ldi	r24, 0x00	; 0
      6a2:	90 e0       	ldi	r25, 0x00	; 0
@@ -1073,6 +1183,12 @@ int main(void)
      6a8:	8f ef       	ldi	r24, 0xFF	; 255
      6aa:	9f ef       	ldi	r25, 0xFF	; 255
      6ac:	c7 de       	rcall	.-626    	; 0x43c <WriteData>
+		SetColomnAddress(starY,starY);
+		MemoryWrite();
+		
+		// This for loop runs the byte through and checks if every single bit is high or low
+		// if that bit is high a black dot is made, if the bit is low a withe dot is made.
+		for (int i=0; i<8; i++)
      6ae:	8f ef       	ldi	r24, 0xFF	; 255
      6b0:	68 1a       	sub	r6, r24
      6b2:	78 0a       	sbc	r7, r24
@@ -1080,26 +1196,69 @@ int main(void)
      6b6:	68 16       	cp	r6, r24
      6b8:	71 04       	cpc	r7, r1
      6ba:	21 f7       	brne	.-56     	; 0x684 <drawSymbol+0x76>
+			}
+		}
+		
+		//Set new startX to be ready for next byte. (+1 to not override the last bit in the last byte)
+		startX = stopX+1;
+		stopX = stopX+8;
      6bc:	96 01       	movw	r18, r12
      6be:	28 5f       	subi	r18, 0xF8	; 248
      6c0:	3f 4f       	sbci	r19, 0xFF	; 255
+		
+		//this if loop keep track of the letters length in the x-axis direction. 
+		//if that length is reached it goes the the next y-axis row.
+		if(stopX >= length*8+startx)
      6c2:	2a 15       	cp	r18, r10
      6c4:	3b 05       	cpc	r19, r11
      6c6:	24 f4       	brge	.+8      	; 0x6d0 <drawSymbol+0xc2>
+				WritePixel(31,31,63);
+			}
+		}
+		
+		//Set new startX to be ready for next byte. (+1 to not override the last bit in the last byte)
+		startX = stopX+1;
      6c8:	c6 01       	movw	r24, r12
      6ca:	01 96       	adiw	r24, 0x01	; 1
+		stopX = stopX+8;
      6cc:	69 01       	movw	r12, r18
      6ce:	06 c0       	rjmp	.+12     	; 0x6dc <drawSymbol+0xce>
+		
+		//this if loop keep track of the letters length in the x-axis direction. 
+		//if that length is reached it goes the the next y-axis row.
+		if(stopX >= length*8+startx)
+		{
+			starY++;
      6d0:	0f 5f       	subi	r16, 0xFF	; 255
      6d2:	1f 4f       	sbci	r17, 0xFF	; 255
+			startX = startx;
+			stopX = startX+7;
      6d4:	c2 2c       	mov	r12, r2
      6d6:	d3 2c       	mov	r13, r3
+		//this if loop keep track of the letters length in the x-axis direction. 
+		//if that length is reached it goes the the next y-axis row.
+		if(stopX >= length*8+startx)
+		{
+			starY++;
+			startX = startx;
      6d8:	84 2d       	mov	r24, r4
      6da:	95 2d       	mov	r25, r5
      6dc:	21 96       	adiw	r28, 0x01	; 1
+	int stopX= startx+7;
+	//Sets start position on y-axis
+	int starY = starty;
+	
+	// this for loop runs trough the full byte length of the letter according to the bitmap from Dotfactory.
+	for (int j=0;j<length_count;j++)
      6de:	c8 15       	cp	r28, r8
      6e0:	d9 05       	cpc	r29, r9
      6e2:	41 f6       	brne	.-112    	; 0x674 <drawSymbol+0x66>
+			stopX = startX+7;
+		}
+	}
+	
+
+}
      6e4:	df 91       	pop	r29
      6e6:	cf 91       	pop	r28
      6e8:	1f 91       	pop	r17
@@ -1121,6 +1280,12 @@ int main(void)
      708:	08 95       	ret
 
 0000070a <getSymbolParameters>:
+	 MemoryWrite();
+	 for(unsigned long i=0; i<((unsigned long)Width*Height);i++)
+		WritePixel(Red,Green,Blue);
+ }
+ 
+void getSymbolParameters(int length_of_symbol, int startX, int startY){
      70a:	ef 92       	push	r14
      70c:	ff 92       	push	r15
      70e:	0f 93       	push	r16
@@ -1128,18 +1293,30 @@ int main(void)
      712:	cf 93       	push	r28
      714:	df 93       	push	r29
      716:	8a 01       	movw	r16, r20
+	//Makes sure to not override the previous letter.
+	if (startX != checkX)
      718:	20 91 9a 15 	lds	r18, 0x159A	; 0x80159a <checkX>
      71c:	30 91 9b 15 	lds	r19, 0x159B	; 0x80159b <checkX+0x1>
      720:	26 17       	cp	r18, r22
      722:	37 07       	cpc	r19, r23
      724:	41 f0       	breq	.+16     	; 0x736 <getSymbolParameters+0x2c>
+	{
+		checkX = startX;
      726:	70 93 9b 15 	sts	0x159B, r23	; 0x80159b <checkX+0x1>
      72a:	60 93 9a 15 	sts	0x159A, r22	; 0x80159a <checkX>
+		start_x = startX;
      72e:	70 93 9d 15 	sts	0x159D, r23	; 0x80159d <start_x+0x1>
      732:	60 93 9c 15 	sts	0x159C, r22	; 0x80159c <start_x>
+	}
+	//the first parameter is the length of the letter, the second is the offset. Therefore to get the length of the letter 
+	// I have to multiply by 2. 
+	length_of_symbol = length_of_symbol*2; //The parameters from array_carrier in the DotFactory.h
      736:	ec 01       	movw	r28, r24
      738:	cc 0f       	add	r28, r28
      73a:	dd 1f       	adc	r29, r29
+	
+	// is the length of the chosen character in the DotFactory BitMap[]. 
+	int length_count = symbol_carrier[length_of_symbol+3]-symbol_carrier[length_of_symbol+1];
      73c:	fe 01       	movw	r30, r28
      73e:	ee 0f       	add	r30, r30
      740:	ff 1f       	adc	r31, r31
@@ -1147,15 +1324,34 @@ int main(void)
      744:	fb 4e       	sbci	r31, 0xEB	; 235
      746:	e0 80       	ld	r14, Z
      748:	f1 80       	ldd	r15, Z+1	; 0x01
+	
+	//is the offset of where in the DotFactory BitMap[] to read from.
+	unsigned int offset_symbol = symbol_carrier[length_of_symbol+1];
+	//A function to return the length of letter en whole byte
+	int fixed_letter = lengthOfFixedSymbol(length_of_symbol); 	
      74a:	ce 01       	movw	r24, r28
      74c:	4b df       	rcall	.-362    	; 0x5e4 <lengthOfFixedSymbol>
+	
+	drawSymbol(symbols,fixed_letter,length_count,start_x,startY, offset_symbol);
      74e:	20 91 9c 15 	lds	r18, 0x159C	; 0x80159c <start_x>
      752:	30 91 9d 15 	lds	r19, 0x159D	; 0x80159d <start_x+0x1>
+	//the first parameter is the length of the letter, the second is the offset. Therefore to get the length of the letter 
+	// I have to multiply by 2. 
+	length_of_symbol = length_of_symbol*2; //The parameters from array_carrier in the DotFactory.h
+	
+	// is the length of the chosen character in the DotFactory BitMap[]. 
+	int length_count = symbol_carrier[length_of_symbol+3]-symbol_carrier[length_of_symbol+1];
      756:	fe 01       	movw	r30, r28
      758:	ee 0f       	add	r30, r30
      75a:	ff 1f       	adc	r31, r31
      75c:	ea 5e       	subi	r30, 0xEA	; 234
      75e:	fb 4e       	sbci	r31, 0xEB	; 235
+	//is the offset of where in the DotFactory BitMap[] to read from.
+	unsigned int offset_symbol = symbol_carrier[length_of_symbol+1];
+	//A function to return the length of letter en whole byte
+	int fixed_letter = lengthOfFixedSymbol(length_of_symbol); 	
+	
+	drawSymbol(symbols,fixed_letter,length_count,start_x,startY, offset_symbol);
      760:	40 81       	ld	r20, Z
      762:	51 81       	ldd	r21, Z+1	; 0x01
      764:	4e 19       	sub	r20, r14
@@ -1164,6 +1360,9 @@ int main(void)
      76a:	86 e1       	ldi	r24, 0x16	; 22
      76c:	92 e0       	ldi	r25, 0x02	; 2
      76e:	4f df       	rcall	.-354    	; 0x60e <drawSymbol>
+	
+	//prepares the offset for next letter.
+	start_x = start_x+symbol_carrier[length_of_symbol]+1; 
      770:	80 91 9c 15 	lds	r24, 0x159C	; 0x80159c <start_x>
      774:	90 91 9d 15 	lds	r25, 0x159D	; 0x80159d <start_x+0x1>
      778:	01 96       	adiw	r24, 0x01	; 1
@@ -1177,6 +1376,8 @@ int main(void)
      788:	93 1f       	adc	r25, r19
      78a:	90 93 9d 15 	sts	0x159D, r25	; 0x80159d <start_x+0x1>
      78e:	80 93 9c 15 	sts	0x159C, r24	; 0x80159c <start_x>
+		
+}
      792:	df 91       	pop	r29
      794:	cf 91       	pop	r28
      796:	1f 91       	pop	r17
@@ -1186,6 +1387,12 @@ int main(void)
      79e:	08 95       	ret
 
 000007a0 <writeString>:
+	}
+	
+
+}
+
+void writeString(char str[],int startx, int starty){
      7a0:	af 92       	push	r10
      7a2:	bf 92       	push	r11
      7a4:	cf 92       	push	r12
@@ -1205,6 +1412,8 @@ int main(void)
      7c0:	de bf       	out	0x3e, r29	; 62
      7c2:	0f be       	out	0x3f, r0	; 63
      7c4:	cd bf       	out	0x3d, r28	; 61
+	// temp is the maximum length of the input string 	
+	int temp[99]={},i=0,j;
      7c6:	fe 01       	movw	r30, r28
      7c8:	31 96       	adiw	r30, 0x01	; 1
      7ca:	26 ec       	ldi	r18, 0xC6	; 198
@@ -1212,6 +1421,9 @@ int main(void)
      7ce:	1d 92       	st	X+, r1
      7d0:	2a 95       	dec	r18
      7d2:	e9 f7       	brne	.-6      	; 0x7ce <writeString+0x2e>
+	
+	//the while loop puts puts the input array into a new array that has the exact length of the string
+	while(str[i]!='\0') 
      7d4:	fc 01       	movw	r30, r24
      7d6:	20 81       	ld	r18, Z
      7d8:	22 23       	and	r18, r18
@@ -1222,14 +1434,28 @@ int main(void)
      7e2:	31 96       	adiw	r30, 0x01	; 1
      7e4:	00 e0       	ldi	r16, 0x00	; 0
      7e6:	10 e0       	ldi	r17, 0x00	; 0
+	{
+		temp[i]=str[i]; i++;
      7e8:	30 e0       	ldi	r19, 0x00	; 0
      7ea:	2d 93       	st	X+, r18
      7ec:	3d 93       	st	X+, r19
      7ee:	0f 5f       	subi	r16, 0xFF	; 255
      7f0:	1f 4f       	sbci	r17, 0xFF	; 255
+void writeString(char str[],int startx, int starty){
+	// temp is the maximum length of the input string 	
+	int temp[99]={},i=0,j;
+	
+	//the while loop puts puts the input array into a new array that has the exact length of the string
+	while(str[i]!='\0') 
      7f2:	21 91       	ld	r18, Z+
      7f4:	21 11       	cpse	r18, r1
      7f6:	f8 cf       	rjmp	.-16     	; 0x7e8 <writeString+0x48>
+	{
+		temp[i]=str[i]; i++;
+	}
+	
+	//this for loop runs through the temp array and displays one letter at the time.
+	for(j=0;j<i;j++)
      7f8:	10 16       	cp	r1, r16
      7fa:	11 06       	cpc	r1, r17
      7fc:	1c f5       	brge	.+70     	; 0x844 <writeString+0xa4>
@@ -1243,27 +1469,50 @@ int main(void)
      80c:	fd 1f       	adc	r31, r29
      80e:	0e 0f       	add	r16, r30
      810:	1f 1f       	adc	r17, r31
+	{
+		// temp[] -33 to make it ASCII so it fits the bitMap
+		int space = temp[j]-33;
      812:	d7 01       	movw	r26, r14
      814:	8d 91       	ld	r24, X+
      816:	9d 91       	ld	r25, X+
      818:	7d 01       	movw	r14, r26
      81a:	81 97       	sbiw	r24, 0x21	; 33
+		if (space != -1)
      81c:	8f 3f       	cpi	r24, 0xFF	; 255
      81e:	bf ef       	ldi	r27, 0xFF	; 255
      820:	9b 07       	cpc	r25, r27
      822:	21 f0       	breq	.+8      	; 0x82c <writeString+0x8c>
+		{
+				getSymbolParameters(space,startx,starty);
      824:	a5 01       	movw	r20, r10
      826:	b6 01       	movw	r22, r12
      828:	70 df       	rcall	.-288    	; 0x70a <getSymbolParameters>
      82a:	09 c0       	rjmp	.+18     	; 0x83e <writeString+0x9e>
+		}
+		else
+		{
+			//If space just move 6 bits on the x-axis
+			start_x = start_x+6;
      82c:	80 91 9c 15 	lds	r24, 0x159C	; 0x80159c <start_x>
      830:	90 91 9d 15 	lds	r25, 0x159D	; 0x80159d <start_x+0x1>
      834:	06 96       	adiw	r24, 0x06	; 6
      836:	90 93 9d 15 	sts	0x159D, r25	; 0x80159d <start_x+0x1>
      83a:	80 93 9c 15 	sts	0x159C, r24	; 0x80159c <start_x>
+	{
+		temp[i]=str[i]; i++;
+	}
+	
+	//this for loop runs through the temp array and displays one letter at the time.
+	for(j=0;j<i;j++)
      83e:	0e 15       	cp	r16, r14
      840:	1f 05       	cpc	r17, r15
      842:	39 f7       	brne	.-50     	; 0x812 <writeString+0x72>
+			//If space just move 6 bits on the x-axis
+			start_x = start_x+6;
+		}
+	}
+	return 0;
+}
      844:	ca 53       	subi	r28, 0x3A	; 58
      846:	df 4f       	sbci	r29, 0xFF	; 255
      848:	0f b6       	in	r0, 0x3f	; 63
@@ -1284,6 +1533,8 @@ int main(void)
      866:	08 95       	ret
 
 00000868 <writeInt>:
+
+void writeInt(long int num, int startX, int startY){
      868:	2f 92       	push	r2
      86a:	3f 92       	push	r3
      86c:	4f 92       	push	r4
@@ -1314,6 +1565,11 @@ int main(void)
      89e:	5c 01       	movw	r10, r24
      8a0:	6a 01       	movw	r12, r20
      8a2:	19 01       	movw	r2, r18
+	// sets num flag
+	int num_flag = 0;
+	
+	//maximum size of a number (999999)
+	int number[6] = {num % 10 , (num/10) % 10 , (num/100) % 10 , (num/1000) % 10 , (num/10000) % 10 , (num/100000) % 10};
      8a4:	0f 2e       	mov	r0, r31
      8a6:	fa e0       	ldi	r31, 0x0A	; 10
      8a8:	4f 2e       	mov	r4, r31
@@ -1395,14 +1651,36 @@ int main(void)
      940:	ce 01       	movw	r24, r28
      942:	01 96       	adiw	r24, 0x01	; 1
      944:	7c 01       	movw	r14, r24
+	return 0;
+}
+
+void writeInt(long int num, int startX, int startY){
+	// sets num flag
+	int num_flag = 0;
      946:	40 e0       	ldi	r20, 0x00	; 0
      948:	50 e0       	ldi	r21, 0x00	; 0
+
+	//This for loop displays the number as MSB first, if the number is 0 and the num falg hasn't been set
+	//it ignores that number and moves on the the next.
+	for (int i = 5; i >= 0; i--)
+	{
+		if (number[i] != 0 | num_flag == 1 )
      94a:	99 24       	eor	r9, r9
      94c:	93 94       	inc	r9
      94e:	81 2c       	mov	r8, r1
+		{
+			//number[i]+15 to make it fir the bit map.
+			getSymbolParameters(number[i]+15,startX,startY);
+			num_flag = 1;
      950:	66 24       	eor	r6, r6
      952:	63 94       	inc	r6
      954:	71 2c       	mov	r7, r1
+
+	//This for loop displays the number as MSB first, if the number is 0 and the num falg hasn't been set
+	//it ignores that number and moves on the the next.
+	for (int i = 5; i >= 0; i--)
+	{
+		if (number[i] != 0 | num_flag == 1 )
      956:	f8 01       	movw	r30, r16
      958:	32 91       	ld	r19, -Z
      95a:	22 91       	ld	r18, -Z
@@ -1420,19 +1698,37 @@ int main(void)
      972:	09 f0       	breq	.+2      	; 0x976 <writeInt+0x10e>
      974:	98 2d       	mov	r25, r8
      976:	99 23       	and	r25, r25
+		{
+			//number[i]+15 to make it fir the bit map.
+			getSymbolParameters(number[i]+15,startX,startY);
      978:	39 f0       	breq	.+14     	; 0x988 <writeInt+0x120>
      97a:	a1 01       	movw	r20, r2
      97c:	b6 01       	movw	r22, r12
      97e:	c9 01       	movw	r24, r18
      980:	0f 96       	adiw	r24, 0x0f	; 15
      982:	c3 de       	rcall	.-634    	; 0x70a <getSymbolParameters>
+			num_flag = 1;
      984:	46 2d       	mov	r20, r6
      986:	57 2d       	mov	r21, r7
+	//maximum size of a number (999999)
+	int number[6] = {num % 10 , (num/10) % 10 , (num/100) % 10 , (num/1000) % 10 , (num/10000) % 10 , (num/100000) % 10};
+
+	//This for loop displays the number as MSB first, if the number is 0 and the num falg hasn't been set
+	//it ignores that number and moves on the the next.
+	for (int i = 5; i >= 0; i--)
      988:	0e 15       	cp	r16, r14
      98a:	1f 05       	cpc	r17, r15
      98c:	21 f7       	brne	.-56     	; 0x956 <writeInt+0xee>
+			//number[i]+15 to make it fir the bit map.
+			getSymbolParameters(number[i]+15,startX,startY);
+			num_flag = 1;
+		}
+	}
+	start_x = startX;
      98e:	d0 92 9d 15 	sts	0x159D, r13	; 0x80159d <start_x+0x1>
      992:	c0 92 9c 15 	sts	0x159C, r12	; 0x80159c <start_x>
+
+}
      996:	2c 96       	adiw	r28, 0x0c	; 12
      998:	0f b6       	in	r0, 0x3f	; 63
      99a:	f8 94       	cli
@@ -1460,6 +1756,8 @@ int main(void)
      9c6:	08 95       	ret
 
 000009c8 <drawRed>:
+
+void drawRed(int count, int height, int realHeight){
      9c8:	af 92       	push	r10
      9ca:	bf 92       	push	r11
      9cc:	cf 92       	push	r12
@@ -1469,6 +1767,8 @@ int main(void)
      9d4:	df 93       	push	r29
      9d6:	eb 01       	movw	r28, r22
      9d8:	5a 01       	movw	r10, r20
+	int _realHeight = 139 - realHeight;
+	writeInt(count,140,60+_realHeight);
      9da:	27 ec       	ldi	r18, 0xC7	; 199
      9dc:	30 e0       	ldi	r19, 0x00	; 0
      9de:	24 1b       	sub	r18, r20
@@ -1480,6 +1780,7 @@ int main(void)
      9ea:	4c e8       	ldi	r20, 0x8C	; 140
      9ec:	50 e0       	ldi	r21, 0x00	; 0
      9ee:	3c df       	rcall	.-392    	; 0x868 <writeInt>
+	FillRectangle(130,100+_realHeight,50,height-_realHeight,31,31,63);
      9f0:	ca 0d       	add	r28, r10
      9f2:	db 1d       	adc	r29, r11
      9f4:	cb 58       	subi	r28, 0x8B	; 139
@@ -1506,6 +1807,7 @@ int main(void)
      a1e:	82 e8       	ldi	r24, 0x82	; 130
      a20:	90 e0       	ldi	r25, 0x00	; 0
      a22:	95 dd       	rcall	.-1238   	; 0x54e <FillRectangle>
+	FillRectangle(130,100+_realHeight,50,height-_realHeight,31,0,0);
      a24:	c1 2c       	mov	r12, r1
      a26:	e1 2c       	mov	r14, r1
      a28:	9e 01       	movw	r18, r28
@@ -1515,6 +1817,7 @@ int main(void)
      a30:	82 e8       	ldi	r24, 0x82	; 130
      a32:	90 e0       	ldi	r25, 0x00	; 0
      a34:	8c dd       	rcall	.-1256   	; 0x54e <FillRectangle>
+}
      a36:	df 91       	pop	r29
      a38:	cf 91       	pop	r28
      a3a:	0f 91       	pop	r16
@@ -1525,6 +1828,8 @@ int main(void)
      a44:	08 95       	ret
 
 00000a46 <drawGreen>:
+
+void drawGreen(int count, int height, int realHeight){
      a46:	af 92       	push	r10
      a48:	bf 92       	push	r11
      a4a:	cf 92       	push	r12
@@ -1534,6 +1839,8 @@ int main(void)
      a52:	df 93       	push	r29
      a54:	eb 01       	movw	r28, r22
      a56:	5a 01       	movw	r10, r20
+	int _realHeight = 139 - realHeight;
+	writeInt(count,40,60+_realHeight);
      a58:	27 ec       	ldi	r18, 0xC7	; 199
      a5a:	30 e0       	ldi	r19, 0x00	; 0
      a5c:	24 1b       	sub	r18, r20
@@ -1545,6 +1852,7 @@ int main(void)
      a68:	48 e2       	ldi	r20, 0x28	; 40
      a6a:	50 e0       	ldi	r21, 0x00	; 0
      a6c:	fd de       	rcall	.-518    	; 0x868 <writeInt>
+	FillRectangle(30,100+_realHeight,50,height-_realHeight,31,31,63);
      a6e:	ca 0d       	add	r28, r10
      a70:	db 1d       	adc	r29, r11
      a72:	cb 58       	subi	r28, 0x8B	; 139
@@ -1571,6 +1879,7 @@ int main(void)
      a9c:	8e e1       	ldi	r24, 0x1E	; 30
      a9e:	90 e0       	ldi	r25, 0x00	; 0
      aa0:	56 dd       	rcall	.-1364   	; 0x54e <FillRectangle>
+	FillRectangle(30,100+_realHeight,50,height-_realHeight,0,31,0);
      aa2:	c1 2c       	mov	r12, r1
      aa4:	00 e0       	ldi	r16, 0x00	; 0
      aa6:	9e 01       	movw	r18, r28
@@ -1580,6 +1889,7 @@ int main(void)
      aae:	8e e1       	ldi	r24, 0x1E	; 30
      ab0:	90 e0       	ldi	r25, 0x00	; 0
      ab2:	4d dd       	rcall	.-1382   	; 0x54e <FillRectangle>
+}
      ab4:	df 91       	pop	r29
      ab6:	cf 91       	pop	r28
      ab8:	0f 91       	pop	r16
@@ -1590,6 +1900,8 @@ int main(void)
      ac2:	08 95       	ret
 
 00000ac4 <drawBlue>:
+
+void drawBlue(int count, int height, int realHeight){
      ac4:	af 92       	push	r10
      ac6:	bf 92       	push	r11
      ac8:	cf 92       	push	r12
@@ -1599,6 +1911,8 @@ int main(void)
      ad0:	df 93       	push	r29
      ad2:	eb 01       	movw	r28, r22
      ad4:	5a 01       	movw	r10, r20
+	int _realHeight = 139 - realHeight;
+	writeInt(count,240,60+_realHeight);
      ad6:	27 ec       	ldi	r18, 0xC7	; 199
      ad8:	30 e0       	ldi	r19, 0x00	; 0
      ada:	24 1b       	sub	r18, r20
@@ -1610,6 +1924,7 @@ int main(void)
      ae6:	40 ef       	ldi	r20, 0xF0	; 240
      ae8:	50 e0       	ldi	r21, 0x00	; 0
      aea:	be de       	rcall	.-644    	; 0x868 <writeInt>
+	FillRectangle(230,100+_realHeight,50,height-_realHeight,31,31,63);
      aec:	ca 0d       	add	r28, r10
      aee:	db 1d       	adc	r29, r11
      af0:	cb 58       	subi	r28, 0x8B	; 139
@@ -1636,6 +1951,7 @@ int main(void)
      b1a:	86 ee       	ldi	r24, 0xE6	; 230
      b1c:	90 e0       	ldi	r25, 0x00	; 0
      b1e:	17 dd       	rcall	.-1490   	; 0x54e <FillRectangle>
+	FillRectangle(230,100+_realHeight,50,height-_realHeight,0,0,31);
      b20:	0f 2e       	mov	r0, r31
      b22:	ff e1       	ldi	r31, 0x1F	; 31
      b24:	cf 2e       	mov	r12, r31
@@ -1649,6 +1965,7 @@ int main(void)
      b34:	86 ee       	ldi	r24, 0xE6	; 230
      b36:	90 e0       	ldi	r25, 0x00	; 0
      b38:	0a dd       	rcall	.-1516   	; 0x54e <FillRectangle>
+}
      b3a:	df 91       	pop	r29
      b3c:	cf 91       	pop	r28
      b3e:	0f 91       	pop	r16
@@ -1659,6 +1976,8 @@ int main(void)
      b48:	08 95       	ret
 
 00000b4a <drawTotal>:
+
+void drawTotal(float Red, float Green, float Blue){
      b4a:	4f 92       	push	r4
      b4c:	5f 92       	push	r5
      b4e:	6f 92       	push	r6
@@ -1693,11 +2012,14 @@ int main(void)
      b88:	fe 82       	std	Y+6, r15	; 0x06
      b8a:	0f 83       	std	Y+7, r16	; 0x07
      b8c:	18 87       	std	Y+8, r17	; 0x08
+	int totalCount = Red + Green + Blue;
      b8e:	7f d0       	rcall	.+254    	; 0xc8e <__addsf3>
      b90:	a8 01       	movw	r20, r16
      b92:	97 01       	movw	r18, r14
      b94:	7c d0       	rcall	.+248    	; 0xc8e <__addsf3>
      b96:	47 d1       	rcall	.+654    	; 0xe26 <__fixsfsi>
+	
+	int heightRed = (Red/totalCount)*139;
      b98:	6b 01       	movw	r12, r22
      b9a:	77 0f       	add	r23, r23
      b9c:	ee 08       	sbc	r14, r14
@@ -1707,6 +2029,12 @@ int main(void)
      ba4:	73 d1       	rcall	.+742    	; 0xe8c <__floatsisf>
      ba6:	4b 01       	movw	r8, r22
      ba8:	5c 01       	movw	r10, r24
+	int heightGreen = (Green/totalCount)*139;
+	int heightBlue = (Blue/totalCount)*139;
+	
+	
+	
+	drawRed(Red, 139, heightRed);
      baa:	9b 01       	movw	r18, r22
      bac:	ac 01       	movw	r20, r24
      bae:	c3 01       	movw	r24, r6
@@ -1732,6 +2060,7 @@ int main(void)
      bd6:	6b e8       	ldi	r22, 0x8B	; 139
      bd8:	70 e0       	ldi	r23, 0x00	; 0
      bda:	f6 de       	rcall	.-532    	; 0x9c8 <drawRed>
+	drawGreen(Green, 139, heightGreen);
      bdc:	a5 01       	movw	r20, r10
      bde:	94 01       	movw	r18, r8
      be0:	69 81       	ldd	r22, Y+1	; 0x01
@@ -1758,6 +2087,7 @@ int main(void)
      c0a:	6b e8       	ldi	r22, 0x8B	; 139
      c0c:	70 e0       	ldi	r23, 0x00	; 0
      c0e:	1b df       	rcall	.-458    	; 0xa46 <drawGreen>
+	drawBlue(Blue, 139, heightBlue);
      c10:	a5 01       	movw	r20, r10
      c12:	94 01       	movw	r18, r8
      c14:	6d 81       	ldd	r22, Y+5	; 0x05
@@ -1786,6 +2116,8 @@ int main(void)
      c42:	40 df       	rcall	.-384    	; 0xac4 <drawBlue>
      c44:	2a e0       	ldi	r18, 0x0A	; 10
      c46:	30 e0       	ldi	r19, 0x00	; 0
+	
+	writeInt(totalCount, 260, 10);
      c48:	44 e0       	ldi	r20, 0x04	; 4
      c4a:	51 e0       	ldi	r21, 0x01	; 1
      c4c:	c7 01       	movw	r24, r14
@@ -1794,6 +2126,8 @@ int main(void)
      c52:	2c 96       	adiw	r28, 0x0c	; 12
      c54:	0f b6       	in	r0, 0x3f	; 63
      c56:	f8 94       	cli
+	
+}
      c58:	de bf       	out	0x3e, r29	; 62
      c5a:	0f be       	out	0x3f, r0	; 63
      c5c:	cd bf       	out	0x3d, r28	; 61
@@ -1818,6 +2152,12 @@ int main(void)
 00000c80 <initEXTInterrupt>:
      c80:	80 e3       	ldi	r24, 0x30	; 48
      c82:	80 93 69 00 	sts	0x0069, r24	; 0x800069 <__TEXT_REGION_LENGTH__+0x700069>
+	//Sets button pin as input
+	
+	//Trigger on rising edge, activate external intterupt on ISR2
+	
+	EICRA = 0b00110000;
+	EIMSK = 0b00000100;
      c86:	84 e0       	ldi	r24, 0x04	; 4
      c88:	8d bb       	out	0x1d, r24	; 29
      c8a:	08 95       	ret
