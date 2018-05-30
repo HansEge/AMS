@@ -1,9 +1,11 @@
 \begin{thebibliography}{1}
 
+
 \bibitem{mic:I2CVideo}
 Serial communications: I2c and spi.
 \newblock \url{https://www.youtube.com/watch?time_continue=1444&v=UUBxxFODyc4}.
 \newblock Accessed: 2018-05-28.
+
 
 \bibitem{man:mega2560Kap17}
 ATMEL.

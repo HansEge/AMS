@@ -27,4 +27,4 @@
 \contentsline {subsection}{\numberline {7.3}Valg af sk\IeC {\ae }rm}{25}{subsection.7.3}
 \contentsline {section}{\numberline {8}Resultater}{26}{section.8}
 \contentsline {subsection}{\numberline {8.1}Visuel test af samlet sysyem}{26}{subsection.8.1}
-\contentsline {section}{\numberline {9}Konklussion}{27}{section.9}
+\contentsline {section}{\numberline {9}Konklussion}{28}{section.9}
