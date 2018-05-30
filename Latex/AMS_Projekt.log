@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.26)  29 MAY 2018 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.26)  30 MAY 2018 10:25
 entering extended mode
 **./AMS_Projekt.tex
 (AMS_Projekt.tex
@@ -1532,7 +1532,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 11.
-<Chapters/Struktur/Img/MCU-Interface_Mode.png, id=317, 714.41907pt x 228.855pt>
+<Chapters/Struktur/Img/MCU-Interface_Mode.png, id=318, 714.41907pt x 228.855pt>
 
 File: Chapters/Struktur/Img/MCU-Interface_Mode.png Graphic file (type png)
 <use Chapters/Struktur/Img/MCU-Interface_Mode.png>
@@ -1560,7 +1560,7 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 31.
 ("C:\Users\Liver\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<Chapters/Struktur/Img/Timedelays.png, id=325, 641.39626pt x 362.10281pt>
+<Chapters/Struktur/Img/Timedelays.png, id=327, 641.39626pt x 362.10281pt>
 File: Chapters/Struktur/Img/Timedelays.png Graphic file (type png)
 <use Chapters/Struktur/Img/Timedelays.png>
 Package pdftex.def Info: Chapters/Struktur/Img/Timedelays.png  used on input li
@@ -1589,7 +1589,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 108.
 
 
-Overfull \hbox (88.49922pt too wide) in paragraph at lines 112--126
+Overfull \hbox (40.42471pt too wide) in paragraph at lines 112--126
  [][] 
  []
 
@@ -1614,19 +1614,19 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 127.
  [18]
-<Chapters/Struktur/Img/Flowchart_TFTDisplay_SW.png, id=404, 297.5115pt x 412.54
-124pt>
+<Chapters/Struktur/Img/Flowchart_TFTDisplay_SW.png, id=406, 354.72525pt x 471.5
+6175pt>
 File: Chapters/Struktur/Img/Flowchart_TFTDisplay_SW.png Graphic file (type png)
 
 <use Chapters/Struktur/Img/Flowchart_TFTDisplay_SW.png>
 Package pdftex.def Info: Chapters/Struktur/Img/Flowchart_TFTDisplay_SW.png  use
 d on input line 134.
-(pdftex.def)             Requested size: 300.0pt x 416.00241pt.
+(pdftex.def)             Requested size: 300.0pt x 398.81465pt.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 140.
-<Chapters/Struktur/Img/TFT_Display_Module_test.jpg, id=406, 1418.29875pt x 1047
+<Chapters/Struktur/Img/TFT_Display_Module_test.jpg, id=408, 1418.29875pt x 1047
 .16219pt>
 File: Chapters/Struktur/Img/TFT_Display_Module_test.jpg Graphic file (type jpg)
 
@@ -1668,7 +1668,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 9.
-<Chapters/Test/Img/I2CTiming.png, id=416, 543.53062pt x 138.5175pt>
+<Chapters/Test/Img/I2CTiming.png, id=418, 543.53062pt x 138.5175pt>
 File: Chapters/Test/Img/I2CTiming.png Graphic file (type png)
 <use Chapters/Test/Img/I2CTiming.png>
 Package pdftex.def Info: Chapters/Test/Img/I2CTiming.png  used on input line 22
@@ -1710,7 +1710,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 114.
-<Chapters/Test/Img/I2C_logic.png, id=469, 940.51375pt x 134.5025pt>
+<Chapters/Test/Img/I2C_logic.png, id=471, 940.51375pt x 134.5025pt>
 File: Chapters/Test/Img/I2C_logic.png Graphic file (type png)
 <use Chapters/Test/Img/I2C_logic.png>
 Package pdftex.def Info: Chapters/Test/Img/I2C_logic.png  used on input line 11
@@ -1725,7 +1725,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 125.
  [23 <./Chapters/Test/Img/I2C_logic.png>]
-<Chapters/Test/Img/TestOpstilling.jpg, id=505, 4015.0pt x 2248.4pt>
+<Chapters/Test/Img/TestOpstilling.jpg, id=507, 4015.0pt x 2248.4pt>
 File: Chapters/Test/Img/TestOpstilling.jpg Graphic file (type jpg)
 <use Chapters/Test/Img/TestOpstilling.jpg>
 Package pdftex.def Info: Chapters/Test/Img/TestOpstilling.jpg  used on input li
@@ -1825,13 +1825,13 @@ Package rerunfilecheck Info: File `AMS_Projekt.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 24971 strings out of 493305
- 453401 string characters out of 3129802
- 633367 words of memory out of 3000000
- 27740 multiletter control sequences out of 15000+200000
+ 24973 strings out of 493305
+ 453428 string characters out of 3129802
+ 633399 words of memory out of 3000000
+ 27741 multiletter control sequences out of 15000+200000
  16794 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,92p,1125b,1850s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,15n,92p,1137b,1850s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 } <C:\Users\Liver\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
 crm1200.pk><C:/Users/Liver/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
@@ -1847,9 +1847,9 @@ e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Liver/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Liver/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Liver/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on AMS_Projekt.pdf (28 pages, 6705946 bytes).
+Output written on AMS_Projekt.pdf (28 pages, 6729255 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 223 named destinations out of 1000 (max. 500000)
+ 616 PDF objects out of 1000 (max. 8388607)
+ 224 named destinations out of 1000 (max. 500000)
  332 words of extra memory for PDF output out of 10000 (max. 10000000)
 

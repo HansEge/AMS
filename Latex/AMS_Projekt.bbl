@@ -17,6 +17,10 @@ ILITEX.
 \newblock {\em a-Si TFT LCD Single Chip Driver 240RGBx320 Resolution and 262K
   color}, Juni 2011.
 
+\bibitem{man:ITDB02}
+ITead Studio.
+\newblock {\em ITDB02 Arduino MEGA shield 2.0}, Juni 2012.
+
 \bibitem{man:TC3200}
 TAOS.
 \newblock {\em Programmable color light-to-frequency converter datasheet}, 1.0
