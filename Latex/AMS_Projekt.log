@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.26)  30 MAY 2018 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.26)  30 MAY 2018 11:26
 entering extended mode
 **./AMS_Projekt.tex
 (AMS_Projekt.tex
@@ -1803,6 +1803,20 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
 )
+Underfull \hbox (badness 10000) in paragraph at lines 7--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--116
+
+ []
+
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 116.
 Package babel Info: Redefining danish shorthand "~
@@ -1811,7 +1825,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 116.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 116.
- [27
+[27
 
 
 ] (AMS_Projekt.bbl)
@@ -1828,8 +1842,8 @@ Package babel Info: Redefining danish shorthand "~
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
-
-(AMS_Projekt.aux (Chapters/Indledning/Indledning.aux) (Chapters/Krav/Krav.aux)
+ (AMS_Projekt.aux
+(Chapters/Indledning/Indledning.aux) (Chapters/Krav/Krav.aux)
 (Chapters/Diskussion/Diskussion.aux) (Chapters/Teori/Teori.aux)
 (Chapters/Struktur/Struktur.aux) (Chapters/Matlab/Matlab.aux)
 (Chapters/Test/Test.aux)
@@ -1864,7 +1878,7 @@ e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Liver/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Liver/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Liver/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on AMS_Projekt.pdf (29 pages, 6729813 bytes).
+Output written on AMS_Projekt.pdf (29 pages, 6730915 bytes).
 PDF statistics:
  620 PDF objects out of 1000 (max. 8388607)
  225 named destinations out of 1000 (max. 500000)
