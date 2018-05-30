@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.26)  30 MAY 2018 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.26)  30 MAY 2018 10:26
 entering extended mode
 **./AMS_Projekt.tex
 (AMS_Projekt.tex
@@ -957,7 +957,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 30.
 (Chapters/Teori/Teori.aux) (Chapters/Struktur/Struktur.aux)
 (Chapters/Matlab/Matlab.aux) (Chapters/Test/Test.aux)
 (Chapters/Alternative_Loesninger/Alternative_Loesninger.aux)
-(Chapters/Konklussion/Konklussion.aux))
+(Chapters/CSS_test/Css_test.aux) (Chapters/Konklussion/Konklussion.aux))
 \openout1 = `AMS_Projekt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -1760,10 +1760,6 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 114.
@@ -1778,13 +1774,13 @@ Package babel Info: Redefining danish shorthand "~
 
 
 ]
-\openout2 = `Chapters/Konklussion/Konklussion.aux'.
+\openout2 = `Chapters/CSS_test/Css_test.aux'.
 
- (Chapters/Konklussion/Konklussion.tex
+ (Chapters/CSS_test/Css_test.tex
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 5.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 115.
@@ -1797,38 +1793,59 @@ Package babel Info: Redefining danish shorthand "~
  [26
 
 
-] (AMS_Projekt.bbl)
+]
+\openout2 = `Chapters/Konklussion/Konklussion.aux'.
+
+
+(Chapters/Konklussion/Konklussion.tex
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 6.
+)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 116.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 116.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 116.
  [27
 
+
+] (AMS_Projekt.bbl)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 127.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 127.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 127.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 127.
+ [28
+
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
 
 (AMS_Projekt.aux (Chapters/Indledning/Indledning.aux) (Chapters/Krav/Krav.aux)
 (Chapters/Diskussion/Diskussion.aux) (Chapters/Teori/Teori.aux)
 (Chapters/Struktur/Struktur.aux) (Chapters/Matlab/Matlab.aux)
 (Chapters/Test/Test.aux)
 (Chapters/Alternative_Loesninger/Alternative_Loesninger.aux)
-(Chapters/Konklussion/Konklussion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+(Chapters/CSS_test/Css_test.aux) (Chapters/Konklussion/Konklussion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `AMS_Projekt.out' has not changed.
-(rerunfilecheck)             Checksum: 0C074631A1618AC88EF357CC3B11EF18;1698.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+(rerunfilecheck)             Checksum: CF5211B63486520308E675301C68029A;1695.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 24973 strings out of 493305
- 453428 string characters out of 3129802
- 633399 words of memory out of 3000000
- 27741 multiletter control sequences out of 15000+200000
+ 24984 strings out of 493305
+ 453958 string characters out of 3129802
+ 634200 words of memory out of 3000000
+ 27742 multiletter control sequences out of 15000+200000
  16794 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,92p,1137b,1850s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1847,9 +1864,9 @@ e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Liver/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Liver/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Liver/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on AMS_Projekt.pdf (28 pages, 6729255 bytes).
+Output written on AMS_Projekt.pdf (29 pages, 6729813 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 224 named destinations out of 1000 (max. 500000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 225 named destinations out of 1000 (max. 500000)
  332 words of extra memory for PDF output out of 10000 (max. 10000000)
 
