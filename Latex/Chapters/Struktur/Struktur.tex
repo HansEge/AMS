@@ -128,7 +128,7 @@ På den efterfølgende \autoref{TFTDisplayFunktioner} vil funktionerne vi har be
 
 
 
-På \autoref{fig:Flowchart_TFTDisplay_SW} ses et lille flow chart over main koden til TFT Display Modul. Den får sit input igennem en I2C forbindelse, som vil blive mere uddybet i det efterfølgende afsnit. Det input bliver så undersøgt, og alt efter hvilket char 'R', 'G' eller 'B' der bliver modtaget optælles den tilhørende conut til den farve, hvorefter displayet bliver clearet og det nye resultat bliver vist. Så er modulet klar til et nyt input.
+På \autoref{fig:Flowchart_TFTDisplay_SW} ses et lille flow chart over main koden til TFT Display Modul. Modulet bliver trigget af at brugeren trykker på knappen. Det får modulet til at hente sit input igennem en I2C forbindelse fra Color Sensor Module, som vil blive mere uddybet i det efterfølgende afsnit. Det input bliver så undersøgt, og alt efter hvilket char 'R', 'G' eller 'B' der bliver modtaget optælles den tilhørende conut til den farve, hvorefter displayet bliver clearet og det nye resultat bliver vist. Så er modulet klar til et nyt input.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 300pt]{Img/Flowchart_TFTDisplay_SW.png}

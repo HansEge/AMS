@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{mic:I2CVideo}
+Serial communications: I2c and spi.
+\newblock \url{https://www.youtube.com/watch?time_continue=1444&v=UUBxxFODyc4}.
+\newblock Accessed: 2018-05-28.
+
 \bibitem{man:mega2560Kap17}
 ATMEL.
 \newblock {\em ATmega 2560 datasheet kapitel 17}, 1.0 edition, Juli 2014.
