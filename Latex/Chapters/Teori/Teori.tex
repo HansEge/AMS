@@ -16,7 +16,7 @@ LC Technology TCS3200, virker ved at have 8x8 array af fotodioder. 16 fotodioder
 	\label{fig:PinSelect}
 \end{figure}
 
-For at aflæse farveintensiteten, bliver man nødt til at måle på sensorens output pin. Signalet der kommer ud er et firkantssignal og farveintensiteten er bestemt alt efter hvor høj frekvensen er. For at se hvilken farve emnet har, bliver man nødt til at aktivere de forskellige fotodioder hver for sig, og tage en måling på output pin'en hver gang man har skiftet fotodiode type. Derefter kan man så sammenligne de tre målinger (Clear bliver ikke målt) og se hvilken er størst. Hvis der skal måles andre farver end rød, grøn og blå, som fx gul, bliver man nødt til at kigge både på grøn og på rød. Hvis begge er lige høje må det være gul. Dog reagerer de forskellige fotodioder forskelligt på hvilken farve man ser på, så der skal der tages højde for. På \autoref{fig:FarveSpektrum} kan man se hvordan de forskellige fotodioder reagerer ved forskellige bølgelændger(farver)\cite{man:TC3200}.
+For at aflæse farveintensiteten, bliver man nødt til at måle på sensorens output pin. Signalet der kommer ud, er et firkantssignal og farveintensiteten er bestemt alt efter, hvor høj frekvensen er. For at se hvilken farve emnet har, bliver man nødt til at aktivere de forskellige fotodioder hver for sig, og tage en måling på output pin'en hver gang man har skiftet fotodiode type. Derefter kan man så sammenligne de tre målinger (Clear bliver ikke målt) og se hvilken er størst. Hvis der skal måles andre farver end rød, grøn og blå, som fx gul, bliver man nødt til at kigge både på grøn og på rød. Hvis begge er lige høje må det være gul. Dog reagerer de forskellige fotodioder forskelligt på hvilken farve man ser på, så der skal der tages højde for. På \autoref{fig:FarveSpektrum} kan man se hvordan de forskellige fotodioder reagerer ved forskellige bølgelændger(farver)\cite{man:TC3200}.
 
 \begin{figure}[H]
 	\centering
@@ -84,7 +84,7 @@ For nemt at kunne forstå softwaren brugt til TC3200, er der blevet udarbejdet e
 
 
 \subsection{Test}
-En enhedstest er blevet lavet da modulet var færdigt. Resultatet af denne test vil bliver fremvist her. Først er input capture softwaren testet ved at bruge en funktions generator til at sende et firkantssignal ind på input capture pin'en. For at se om softwaren kunne aflæse den rigtige frekvens, er der gjort brug af UART kommunikation til en tilsluttet PC. Fra en terminal på PC'en har man kunne aflæse frekvensen fra arduino'en og derfra konstatere at programmet har virket.
+En enhedstest er blevet lavet da modulet var færdigt. Resultatet af denne test vil blive fremvist her. Først er input capture softwaren testet ved at bruge en funktions generator til at sende et firkantssignal ind på input capture pin'en. For at se om softwaren kunne aflæse den rigtige frekvens, er der gjort brug af UART kommunikation til en tilsluttet PC. Fra en terminal på PC'en har man kunne aflæse frekvensen fra arduino'en og derfra konstatere at programmet har virket.
 
 \begin{figure}[H]
 	\centering
