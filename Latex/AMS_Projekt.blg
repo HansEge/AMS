@@ -13,9 +13,5 @@ The style file: plain.bst
 Database file #1: Bibliography.bib
 Warning--entry type for "app:ColorSensor" isn't style-file defined
 --line 38 of file Bibliography.bib
-<<<<<<< HEAD
 Warning--to sort, need author or key in mic:I2CVideo
 (There were 2 warnings)
-=======
-(There was 1 warning)
->>>>>>> e85c7ea5a67b12f4b48d5c367061d0cfd3d97756
